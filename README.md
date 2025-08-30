@@ -130,9 +130,9 @@ Testing is allowed, and the generated effect is similar.
 
 ## More
 
-For more info, please check below APIs and integration documents
+For more info, please check below APIs and integration documents.
 
-| API | Path | Integration Document |
+| API | Path | Integration Guidance |
 | ---- | ---- | ------------ |
 | [Pixverse Video Generation API Integration Guide](http://platform.acedata.cloud/documents/00f200b3-709d-4783-ac56-3d27cc70b73d) | `/pixverse/videos` | [Pixverse Video Generation API Integration Guide](http://platform.acedata.cloud/documents/a5c7bf5a-18bf-4943-becc-cfe1356f90ec) |
 | [Pixverse Tasks API](http://platform.acedata.cloud/documents/94d98778-9a98-4e27-bd68-e018a34fae11) | `/pixverse/tasks` | [Pixverse Tasks API Integration Guide](http://platform.acedata.cloud/documents/0ee1c397-2d5f-4a70-ae0f-4a49195dfe20) |
@@ -140,6 +140,6 @@ For more info, please check below APIs and integration documents
 
 Base URL: [https://api.acedata.cloud](https://api.acedata.cloud)
 
-## Support 
+## Support
 
 If you meet any issue, check our from [support info](https://platform.acedata.cloud/support).
