@@ -16,7 +16,7 @@ Finally, go to the Tasks API page [Pixverse Tasks API](https://platform.acedata.
 
 If you have not logged in or registered, you will be automatically redirected to the [login page](https://platform.acedata.cloud) inviting you to register and log in. After logging in or registering, you will be automatically returned to the current page.
 
-There is a free quota available for first-time applicants, allowing you to use this API for free.
+There will be a free quota offered for the first application, allowing you to use this API for free.
 
 ## Request Example
 
@@ -139,8 +139,8 @@ After a successful request, the API will return the detailed information of the 
 The returned result contains multiple fields, with the request field being the request body when the task was initiated, and the response field being the response body returned after the task is completed. The field descriptions are as follows.
 
 - `id`: The ID of the video task generated, used to uniquely identify this video generation task.
-- `request`: The request information in the video task.
-- `response`: The return information in the video task.
+- `request`: The request information in the video task query.
+- `response`: The return information in the video task query.
 
 ## Batch Query Operation
 
@@ -148,7 +148,7 @@ This is for querying the details of multiple task IDs, and unlike the above, the
 
 **Request Body** includes:
 
-- `ids`: An array of uploaded task IDs.
+- `ids`: The array of uploaded task IDs.
 - `action`: The operation method for the task.
 
 Set as shown in the image below:
