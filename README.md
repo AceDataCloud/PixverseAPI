@@ -17,11 +17,11 @@ To use the Pixverse Videos Generation API, you can first visit the [Pixverse Vid
 
 If you are not logged in or registered, you will be automatically redirected to the login page inviting you to register and log in. After logging in or registering, you will be automatically returned to the current page.
 
-Upon your first application, there will be a free quota provided, allowing you to use the API for free.
+Upon the first application, there will be a free quota provided, allowing you to use the API for free.
 
 ### Basic Usage
 
-You can generate videos based on prompt words, for example, you can input `quiver`, as shown in the image:
+You can generate videos based on prompts, for example, you can input `quiver`, as shown in the image:
 
 <p><img src="https://cdn.acedata.cloud/azz8d3.png" width="500" class="m-auto"></p>
 
@@ -33,7 +33,7 @@ Main request parameters:
 
 - `model`: The model for generating the video, default is `v3.5`.
 - `action`: The action for generating the video, default is `generate`, optional `extend`.
-- `prompt`: The prompt word for generating the video (required).
+- `prompt`: The prompt for generating the video (required).
 - `style`: Optional video style.
 - `motion`: Motion mode, default is normal.
 - `quality`: Video clarity, default is `540p`.
@@ -81,31 +81,31 @@ At this point, we have obtained the content of a video, including video ID, vide
 
 Field descriptions are as follows:
 
-- success: Whether the generation was successful, if successful then `true`, otherwise `false`
-- task_id: The ID of this generation task
-- trace_id: The tracking ID of this generation task
+- success: Indicates whether the generation was successful; if successful, it is `true`, otherwise it is `false`.
+- task_id: The ID of this generation task.
+- trace_id: The tracking ID of this generation task.
 - data: A list containing detailed information about the generated video.
-  - id: The unique ID of the generated video, which can be used for subsequent expansion generation
-  - first_frame: The link to the first frame image of the video
-  - last_frame: The link to the last frame image of the video
-  - video_width: The width of the video result
-  - video_height: The length of the video result
-  - prompt: The prompt word for this video generation task
-  - model: The model used for this video generation task
-  - video_url: The video link for this video generation task
-  - template_id: The ID of the template effects used in the video
-  - template_name: The name of the template effects used in the video
-  - asset_id: The ID of the character used in the video
-  - asset_name: The name of the character used in the video
-  - style: The style of this video generation task
-  - aspect_ratio: The size of this video
-  - extended: Whether this video is an extended generation, 0 means it is not an extended generation, otherwise it is an extended generation
+  - id: The unique ID of the generated video, which can be used for subsequent extensions.
+  - first_frame: The link to the first frame image of the video.
+  - last_frame: The link to the last frame image of the video.
+  - video_width: The width of the video result.
+  - video_height: The height of the video result.
+  - prompt: The prompt for this video generation task.
+  - model: The model used for this video generation task.
+  - video_url: The video link for this generation task.
+  - template_id: The ID of the template effects used in the video.
+  - template_name: The name of the template effects used in the video.
+  - asset_id: The ID of the character used in the video.
+  - asset_name: The name of the character used in the video.
+  - style: The style of this video generation task.
+  - aspect_ratio: The size of this video.
+  - extended: Indicates whether this video is an extended generation; 0 means it is not an extended generation, otherwise it is an extended generation.
 
 ### Custom First and Last Frame Video Generation
 
 If you want to customize the first and last frames for video generation, you can input the links to the first and last frame images:
 
-At this time, the `frame` field can accept content similar to the following:
+At this point, the `frame` field can accept content similar to the following:
 
 - First frame image
   <p><img src="https://cdn.acedata.cloud/c7zzmb.png" width="500" class="m-auto"></p>
@@ -114,15 +114,15 @@ At this time, the `frame` field can accept content similar to the following:
 
 Next, we need to customize the song generation based on lyrics, title, and style, specifying the following content:
 
-- action: The action for this video generation task, which can be either generate video `action` or extend video `extend`
-- prompt: The prompt word for this video generation task.
-- frame: An array of video links for the first and last frames generated.
+- action: The action for this video generation task, which can be either generate video `action` or extend video `extend`.
+- prompt: The prompt for this video generation task.
+- frame: An array of video links for the first and last frames.
 
-An example of the filled form is as follows:
+An example of the filled content is as follows:
 
 <p><img src="https://cdn.acedata.cloud/4ea6pa.png" width="500" class="m-auto"></p>
 
-After filling it out, the generated code is as follows:
+After filling in, the generated code is as follows:
 
 <p><img src="https://cdn.acedata.cloud/yfzxxn.png" width="500" class="m-auto"></p>
 
@@ -158,7 +158,7 @@ If you want to use specific video template effects to generate videos, you only 
         "created_at": "2024-11-28T17:53:21Z",
         "updated_at": "2024-12-25T10:19:28Z",
         "display_prompt": "Show off your strong muscles and have everyone hooked.",
-        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Become a Muscle Man\",\"display_prompt\":\"Experience the joy of being a muscle man\"}}",
+        "i18n_json": "{\"zh-CN\":{\"display_name\":\"成为肌肉猛男\",\"display_prompt\":\"体验猛男快乐\"}}",
         "example_list": "[{\"img_id\":113750602,\"img_url\":\"https://media.pixverse.ai/upload%2F920dc791-8c9f-4518-8761-82958a827190.png\"},{\"img_id\":113750690,\"img_url\":\"https://media.pixverse.ai/upload%2Fddd29e75-beeb-461c-9388-3e14c2709e73.png\"},{\"img_id\":113750791,\"img_url\":\"https://media.pixverse.ai/upload%2Ff2853009-8238-4e0f-93ec-cfc68fee28b7.png\"}]",
         "qualities": [
             "360p",
@@ -176,7 +176,7 @@ If you want to use specific video template effects to generate videos, you only 
         "created_at": "2024-10-31T12:07:47Z",
         "updated_at": "2025-01-06T05:32:42Z",
         "display_prompt": "Hug each other\t",
-        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Love's Hug\",\"display_prompt\":\"Embrace each other\"}}",
+        "i18n_json": "{\"zh-CN\":{\"display_name\":\"爱的抱抱\",\"display_prompt\":\"互相拥抱在一起\"}}",
         "example_list": "[{\"img_id\":113741803,\"img_url\":\"https://media.pixverse.ai/upload%2Fb2626bc2-050d-4ea6-a864-e2054c012df5.png\"},{\"img_id\":113750690,\"img_url\":\"https://media.pixverse.ai/upload%2Fddd29e75-beeb-461c-9388-3e14c2709e73.png\"}]",
         "qualities": [
             "360p",
@@ -194,7 +194,7 @@ If you want to use specific video template effects to generate videos, you only 
         "created_at": "2024-10-24T03:55:29Z",
         "updated_at": "2025-01-06T05:32:53Z",
         "display_prompt": "The [OBJECT] comes to life and walks out of the [SCENE]",
-        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Lively\",\"display_prompt\":\"It is alive!\"}}",
+        "i18n_json": "{\"zh-CN\":{\"display_name\":\"活灵活现\",\"display_prompt\":\"它活了！\"}}",
         "example_list": "",
         "qualities": [
             "360p",
@@ -212,7 +212,7 @@ If you want to use specific video template effects to generate videos, you only 
         "created_at": "2024-12-08T15:14:11Z",
         "updated_at": "2024-12-25T10:19:28Z",
         "display_prompt": "Change hairstyle for a better mood",
-        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Everything Can Be Curled\",\"display_prompt\":\"Feeling down? Change your hairstyle and see\"}}",
+        "i18n_json": "{\"zh-CN\":{\"display_name\":\"万物皆可羊毛卷\",\"display_prompt\":\"心情不好，换个发型看看\"}}",
         "example_list": "[{\"img_id\":113741803,\"img_url\":\"https://media.pixverse.ai/upload%2Fb2626bc2-050d-4ea6-a864-e2054c012df5.png\"},{\"img_id\":113750690,\"img_url\":\"https://media.pixverse.ai/upload%2Fddd29e75-beeb-461c-9388-3e14c2709e73.png\"}]",
         "qualities": [
             "360p",
@@ -230,7 +230,7 @@ If you want to use specific video template effects to generate videos, you only 
         "created_at": "2024-12-25T12:29:05Z",
         "updated_at": "2025-01-06T05:32:33Z",
         "display_prompt": "Moon Prism Power, Make Up!",
-        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Become a Sailor Senshi\",\"display_prompt\":\"Moon Crystal Power, Transform!\"}}",
+        "i18n_json": "{\"zh-CN\":{\"display_name\":\"成为美少女战士\",\"display_prompt\":\"月之水晶力量，变身！\"}}",
         "example_list": "",
         "qualities": [
             "360p",
@@ -248,7 +248,7 @@ If you want to use specific video template effects to generate videos, you only 
         "created_at": "2024-12-25T12:29:40Z",
         "updated_at": "2025-01-06T05:32:25Z",
         "display_prompt": "I am Sun Wukong, the Victorious Fighting Buddha!",
-        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Black Wukong Engine\",\"display_prompt\":\"Ride westward, face destiny!\"}}",
+        "i18n_json": "{\"zh-CN\":{\"display_name\":\"黑悟空引擎\",\"display_prompt\":\"放马西行，直面天命！\"}}",
         "example_list": "",
         "qualities": [
             "360p",
@@ -266,7 +266,7 @@ If you want to use specific video template effects to generate videos, you only 
         "created_at": "2024-12-15T03:16:32Z",
         "updated_at": "2024-12-30T06:08:16Z",
         "display_prompt": "I want a：",
-        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Christmas Gift Blind Box\",\"display_prompt\":\"I want: \"}}",
+        "i18n_json": "{\"zh-CN\":{\"display_name\":\"圣诞礼物盲盒\",\"display_prompt\":\"我想要：\"}}",
         "example_list": "[{\"img_id\":113741803,\"img_url\":\"https://media.pixverse.ai/upload%2Fb2626bc2-050d-4ea6-a864-e2054c012df5.png\"},{\"img_id\":113750690,\"img_url\":\"https://media.pixverse.ai/upload%2Fddd29e75-beeb-461c-9388-3e14c2709e73.png\"}]",
         "qualities": [
             "360p",
@@ -338,7 +338,7 @@ If you want to use specific video template effects to generate videos, you only 
         "created_at": "2024-11-22T08:21:19Z",
         "updated_at": "2024-12-26T07:40:43Z",
         "display_prompt": "Transform into Harley Quinn, mastering allure and chaos",
-        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Harley Quinn Transformation\",\"display_prompt\":\"Transform into Harley Quinn, mastering allure and madness\"}}",
+        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Harley Quinn Transformation\",\"display_prompt\":\"Transform into Harley Quinn, mastering allure and chaos\"}}",
         "example_list": "[{\"img_id\":113741803,\"img_url\":\"https://media.pixverse.ai/upload%2Fb2626bc2-050d-4ea6-a864-e2054c012df5.png\"},{\"img_id\":113742000,\"img_url\":\"https://media.pixverse.ai/upload%2F19090035-612e-40ed-9c8d-a7aaf781d492.png\"},{\"img_id\":113742074,\"img_url\":\"https://media.pixverse.ai/upload%2F50ed9020-7b58-4dd9-aa39-ff06b9e0df12.png\"}]",
         "qualities": [
             "360p",
@@ -668,7 +668,7 @@ If you want to use specific video template effects to generate videos, you only 
 ]
 ```
 
-We can choose a `template_id` from above to generate a video. We take `302325299651648` as an example to generate a video, and the other parameters are similar to basic usage. The specific parameters are shown in the image below:
+We can choose a `template_id` from above to generate a video, using `302325299651648` as an example to generate the video, with other parameters being similar to basic usage, the specific parameters are shown in the image below:
 
 <p><img src="https://cdn.acedata.cloud/pwbyma.png" width="500" class="m-auto"></p>
 
@@ -676,7 +676,7 @@ After filling in, the automatically generated code is as follows:
 
 <p><img src="https://cdn.acedata.cloud/gb09le.png" width="500" class="m-auto"></p>
 
-The corresponding Python code:
+Corresponding Python code:
 
 ```python
 import requests
@@ -747,15 +747,15 @@ At this time, you can see that the video ID is:
 "id": 317989274748288
 ```
 
-> Note that the `id` here is the ID of the generated video. If you do not know how to generate a video, you can refer to the basic usage above to generate a video.
+> Note that the `id` here is the ID of the generated video. If you do not know how to generate a video, you can refer to the basic usage mentioned above to generate a video.
 
-Next, we must fill in the lyrics and style to customize the generated song, and we can specify the following content:
+Next, we must fill in the lyrics and style to customize the generated song, specifying the following content:
 
 - action: The behavior of this video generation task, generally there are normal generation `generate` and extended video `extend`.
 - prompt: The prompt for this video generation.
 - video_id: The reference video ID for this expansion video task.
 
-The sample input is as follows:
+An example of filling in is as follows:
 
 <p><img src="https://cdn.acedata.cloud/hio4x5.png" width="500" class="m-auto"></p>
 
@@ -763,7 +763,7 @@ After filling in, the automatically generated code is as follows:
 
 <p><img src="https://cdn.acedata.cloud/ts5xif.png" width="500" class="m-auto"></p>
 
-The corresponding Python code:
+Corresponding Python code:
 
 ```python
 import requests
