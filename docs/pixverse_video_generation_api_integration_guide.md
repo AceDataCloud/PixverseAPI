@@ -10,7 +10,7 @@ To use the Pixverse Videos Generation API, you can first visit the [Pixverse Vid
 
 If you are not logged in or registered, you will be automatically redirected to the login page inviting you to register and log in. After logging in or registering, you will be automatically returned to the current page.
 
-Upon the first application, there will be a free quota provided, allowing you to use the API for free.
+Upon your first application, there will be a free quota provided, allowing you to use the API for free.
 
 ## Basic Usage
 
@@ -70,7 +70,7 @@ You can click the "Try" button to directly test the API, wait for 1-2 minutes, a
 }
 ```
 
-At this point, we have obtained the content of a video, including video ID, video link, video clarity, video duration, and other content.
+At this point, we have obtained the content of a video, including video ID, video link, video clarity, video duration, and other details.
 
 Field descriptions are as follows:
 
@@ -111,11 +111,11 @@ Next, we need to customize the song generation based on lyrics, title, and style
 - prompt: The prompt for this video generation task.
 - frame: An array of video links for the first and last frames.
 
-An example of the filled content is as follows:
+An example of the input is as follows:
 
 <p><img src="https://cdn.acedata.cloud/4ea6pa.png" width="500" class="m-auto"></p>
 
-After filling in, the generated code is as follows:
+After filling it out, the generated code is as follows:
 
 <p><img src="https://cdn.acedata.cloud/yfzxxn.png" width="500" class="m-auto"></p>
 
@@ -279,7 +279,7 @@ If you want to use specific video template effects to generate videos, you only 
         "created_at": "2024-12-15T03:17:26Z",
         "updated_at": "2024-12-30T06:08:24Z",
         "display_prompt": "Discovering Santa Claus in the parallel world!",
-        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Where is Santa Claus?\",\"display_prompt\":\"“Discover” Santa Claus all over the world\"}}",
+        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Where is Santa?\",\"display_prompt\":\"“Discover” Santa Claus around the world\"}}",
         "example_list": "[{\"img_id\":119280295,\"img_url\":\"https://media.pixverse.ai/upload%2Fde34a072-325e-4d86-88d9-2daef292e1b4.jpeg\"},{\"img_id\":119280616,\"img_url\":\"https://media.pixverse.ai/upload%2F5b4da0a2-86c3-4204-adda-74bfa7c3d0d1.jpg\"}]",
         "qualities": [
             "360p",
@@ -661,7 +661,7 @@ If you want to use specific video template effects to generate videos, you only 
 ]
 ```
 
-We can choose a `template_id` from above to generate a video, using `302325299651648` as an example to generate the video, with other parameters being similar to basic usage, the specific parameters are shown in the image below:
+We can choose a `template_id` from above to generate a video. We take `302325299651648` as an example to generate a video, and the other parameters are similar to basic usage. The specific parameters are shown in the image below:
 
 <p><img src="https://cdn.acedata.cloud/pwbyma.png" width="500" class="m-auto"></p>
 
@@ -669,7 +669,7 @@ After filling in, the automatically generated code is as follows:
 
 <p><img src="https://cdn.acedata.cloud/gb09le.png" width="500" class="m-auto"></p>
 
-Corresponding Python code:
+The corresponding Python code:
 
 ```python
 import requests
@@ -693,7 +693,7 @@ response = requests.post(url, json=payload, headers=headers)
 print(response.text)
 ```
 
-Clicking run, you can find that a result is obtained, as follows:
+Clicking run, you can find that you will get a result as follows:
 
 ```json
 {
@@ -726,9 +726,9 @@ Clicking run, you can find that a result is obtained, as follows:
 }
 ```
 
-It can be seen that the result content is the same as the video template effect, which also realizes the function of generating videos using template effects.
+As you can see, the result content is the same as the video template effect, which also realizes the function of generating videos using template effects.
 
-## Continue to expand video generation function
+## Continue to Expand Video Generation Function
 
 If you want to expand the generated Pixverse video, you can set the parameter `action` to `extend`, and input the ID of the video to be expanded. The video ID can be obtained based on basic usage, as shown in the image below:
 
@@ -740,15 +740,15 @@ At this time, you can see that the video ID is:
 "id": 317989274748288
 ```
 
-> Note that the `id` here is the ID of the generated video. If you do not know how to generate a video, you can refer to the basic usage mentioned above to generate a video.
+> Note that the `id` in the video here is the ID of the generated video. If you do not know how to generate a video, you can refer to the basic usage mentioned above to generate a video.
 
-Next, we must fill in the lyrics and style to customize the generated song, specifying the following content:
+Next, we must fill in the lyrics and style to customize the generated song, and we can specify the following content:
 
 - action: The behavior of this video generation task, generally there are normal generation `generate` and extended video `extend`.
 - prompt: The prompt for this video generation.
 - video_id: The reference video ID for this expansion video task.
 
-An example of filling in is as follows:
+The sample input is as follows:
 
 <p><img src="https://cdn.acedata.cloud/hio4x5.png" width="500" class="m-auto"></p>
 
@@ -756,7 +756,7 @@ After filling in, the automatically generated code is as follows:
 
 <p><img src="https://cdn.acedata.cloud/ts5xif.png" width="500" class="m-auto"></p>
 
-Corresponding Python code:
+The corresponding Python code:
 
 ```python
 import requests
@@ -779,7 +779,7 @@ response = requests.post(url, json=payload, headers=headers)
 print(response.text)
 ```
 
-Clicking run, you can find that a result is obtained, as follows:
+Clicking run, you can find that you will get a result as follows:
 ```
 ```json
 {
@@ -911,10 +911,10 @@ The generated result is similar to the above text, thus completing the process o
 
 ### Styles:
 
-| Motion Mode | Effect     |
-| ----------- | ---------- |
-| normal      | Normal Mode |
-| fast        | Performance Mode |
+| Motion Mode | Effect   |
+| ----------- | -------- |
+| normal      | 普通模式  |
+| fast        | 性能模式  |
 
 ### Camera Movement
 | Parameter          | Effect       |
@@ -933,10 +933,10 @@ The generated result is similar to the above text, thus completing the process o
 | super_dolly_out    | Super zoom out |
 | left_follow        | Left follow  |
 | right_follow       | Right follow |
-| pan_left           | Left arc pan |
-| pan_right          | Right arc pan |
+| pan_left           | Pan left arc |
+| pan_right          | Pan right arc |
 | fix_bg             | Fixed shot   |
-| camera_rotation    | Camera rotation |
+| camera_rotation     | Camera rotation |
 | robo_arm           | Robotic arm movement |
 | whip_pan           | Quick pan    |
 
@@ -946,7 +946,7 @@ Due to the relatively long time it takes for Pixverse to generate music, approxi
 
 The overall process is: when the client initiates a request, an additional `callback_url` field is specified. After the client initiates the API request, the API will immediately return a result containing a `task_id` field, representing the current task ID. When the task is completed, the generated music result will be sent to the client-specified `callback_url` in the form of a POST JSON, which also includes the `task_id` field, allowing the task result to be associated by ID.
 
-Let’s understand how to operate specifically through an example.
+Let's understand how to operate specifically through an example.
 
 First, the Webhook callback is a service that can receive HTTP requests, and developers should replace it with the URL of their own HTTP server. For demonstration purposes, we use a public Webhook sample site https://webhook.site/, where you can open the site to get a Webhook URL, as shown in the image:
 
@@ -958,7 +958,7 @@ Next, we can set the `callback_url` field to the above Webhook URL and fill in t
 
 <p><img src="https://cdn.acedata.cloud/au5m49.png" width="500" class="m-auto"></p>
 
-Clicking run, you will find that a result is immediately obtained, as follows:
+Clicking run, you will immediately receive a result, as follows:
 
 ```
 {
