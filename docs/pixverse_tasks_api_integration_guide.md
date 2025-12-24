@@ -6,23 +6,23 @@ This document will provide detailed integration instructions for the Pixverse Ta
 
 ## Application Process
 
-To use the Pixverse Tasks API, you first need to apply for the corresponding service on the application page [Pixverse Videos Generation API](https://platform.acedata.cloud/documents/00f200b3-709d-4783-ac56-3d27cc70b73d), and then copy the task ID from the Pixverse Videos Generation API, as shown in the image:
+To use the Pixverse Tasks API, you first need to apply for the corresponding service on the application page [Pixverse Videos Generation API](https://platform.acedata.cloud/documents/00f200b3-709d-4783-ac56-3d27cc70b73d), and then copy the task ID from the Pixverse Videos Generation API, as shown in the image below:
 
 <p><img src="https://cdn.acedata.cloud/3oqspi.png" width="500" class="m-auto"></p>
 
-Finally, go to the Tasks API page [Pixverse Tasks API](https://platform.acedata.cloud/documents/94d98778-9a98-4e27-bd68-e018a34fae11) to apply for the corresponding service. After entering the page, click the "Acquire" button, as shown in the image:
+Finally, go to the Tasks API page [Pixverse Tasks API](https://platform.acedata.cloud/documents/94d98778-9a98-4e27-bd68-e018a34fae11) to apply for the corresponding service. After entering the page, click the "Acquire" button, as shown in the image below:
 
 ![Application Page](https://cdn.acedata.cloud/rci31i.png)
 
-If you have not logged in or registered, you will be automatically redirected to the [login page](https://platform.acedata.cloud) inviting you to register and log in. After logging in or registering, you will be automatically returned to the current page.
+If you are not logged in or registered, you will be automatically redirected to the [login page](https://platform.acedata.cloud) inviting you to register and log in. After logging in or registering, you will be automatically returned to the current page.
 
-There will be a free quota offered for the first application, allowing you to use this API for free.
+There is a free quota available for first-time applicants, allowing you to use this API for free.
 
 ## Request Example
 
 The Pixverse Tasks API can be used to query the results of the Pixverse Videos Generation API. For information on how to use the Pixverse Videos Generation API, please refer to the document [Pixverse Videos Generation Operation Documentation](https://platform.acedata.cloud/documents/a5c7bf5a-18bf-4943-becc-cfe1356f90ec).
 
-We will take a task ID returned by the Pixverse Videos Generation API as an example to demonstrate how to use this API. Suppose we have a task ID: e3d52b98-b944-438e-b122-1a9141b5626c, and we will demonstrate how to pass in a task ID.
+We will take an example of a task ID returned by the Pixverse Videos Generation API to demonstrate how to use this API. Suppose we have a task ID: e3d52b98-b944-438e-b122-1a9141b5626c, and we will demonstrate how to pass in a task ID.
 
 ### Task Example Image
 
@@ -32,7 +32,7 @@ We will take a task ID returned by the Pixverse Videos Generation API as an exam
 
 **Request Headers** include:
 
-- `accept`: Specifies that the response result should be in JSON format, set to `application/json`.
+- `accept`: Specifies that the response should be in JSON format, set to `application/json`.
 - `authorization`: The key to call the API, which can be selected directly after application.
 
 **Request Body** includes:
@@ -46,7 +46,7 @@ Set as shown in the image below:
 
 ### Code Example
 
-You can see that various language codes have been automatically generated on the right side of the page, as shown in the image:
+You can see that various language codes have been automatically generated on the right side of the page, as shown in the image below:
 
 <p><img src="https://cdn.acedata.cloud/fifda3.png" width="500" class="m-auto"></p>
 
@@ -89,7 +89,7 @@ print(response.text)
 
 ### Response Example
 
-After a successful request, the API will return the detailed information of the video task here. For example:
+Upon successful request, the API will return the detailed information of the video task here. For example:
 
 ```json
 {
@@ -148,7 +148,7 @@ This is for querying the details of multiple task IDs, and unlike the above, the
 
 **Request Body** includes:
 
-- `ids`: The array of uploaded task IDs.
+- `ids`: An array of uploaded task IDs.
 - `action`: The operation method for the task.
 
 Set as shown in the image below:
@@ -157,7 +157,7 @@ Set as shown in the image below:
 
 ### Code Example
 
-You can see that various language codes have been automatically generated on the right side of the page, as shown in the image:
+You can see that various language codes have been automatically generated on the right side of the page, as shown in the image below:
 
 <p><img src="https://cdn.acedata.cloud/9jipxg.png" width="500" class="m-auto"></p>
 
@@ -165,7 +165,7 @@ Some code examples are as follows:
 
 ### Response Example
 
-After a successful request, the API will return the specific details of all batch video tasks this time. For example:
+Upon successful request, the API will return the specific details of all batch video tasks this time. For example:
 ```json
 {
   "items": [
