@@ -8,13 +8,13 @@ To use the Pixverse Videos Generation API, you can first visit the [Pixverse Vid
 
 ![](https://cdn.acedata.cloud/nyq0xz.png)
 
-If you are not logged in or registered, you will be automatically redirected to the login page inviting you to register and log in. After logging in or registering, you will be automatically returned to the current page.
+If you are not logged in or registered, you will be automatically redirected to the login page inviting you to register and log in. After logging in or registering, you will automatically return to the current page.
 
 Upon the first application, there will be a free quota provided, allowing you to use the API for free.
 
 ## Basic Usage
 
-You can generate videos based on prompts, for example, you can input `quiver`, as shown in the image:
+You can generate videos based on prompt words, for example, you can input `quiver`, as shown in the image:
 
 <p><img src="https://cdn.acedata.cloud/azz8d3.png" width="500" class="m-auto"></p>
 
@@ -26,7 +26,7 @@ Main request parameters:
 
 - `model`: The model for generating the video, default is `v3.5`.
 - `action`: The action for generating the video, default is `generate`, optional `extend`.
-- `prompt`: The prompt for generating the video (required).
+- `prompt`: The prompt word for generating the video (required).
 - `style`: Optional video style.
 - `motion`: Motion mode, default is normal.
 - `quality`: Video clarity, default is `540p`.
@@ -70,35 +70,35 @@ You can click the "Try" button to directly test the API, wait for 1-2 minutes, a
 }
 ```
 
-At this point, we have obtained the content of a video, including video ID, video link, video clarity, video duration, and other details.
+At this point, we have obtained the content of a video, including video ID, video link, video clarity, video duration, and other content.
 
 Field descriptions are as follows:
 
-- success: Indicates whether the generation was successful; if successful, it is `true`, otherwise it is `false`.
-- task_id: The ID of this generation task.
-- trace_id: The tracking ID of this generation task.
+- success: Whether the generation was successful, if successful then `true`, otherwise `false`
+- task_id: The ID of this generation task
+- trace_id: The tracking ID of this generation task
 - data: A list containing detailed information about the generated video.
-  - id: The unique ID of the generated video, which can be used for subsequent extensions.
-  - first_frame: The link to the first frame image of the video.
-  - last_frame: The link to the last frame image of the video.
-  - video_width: The width of the video result.
-  - video_height: The height of the video result.
-  - prompt: The prompt for this video generation task.
-  - model: The model used for this video generation task.
-  - video_url: The video link for this generation task.
-  - template_id: The ID of the template effects used in the video.
-  - template_name: The name of the template effects used in the video.
-  - asset_id: The ID of the character used in the video.
-  - asset_name: The name of the character used in the video.
-  - style: The style of this video generation task.
-  - aspect_ratio: The size of this video.
-  - extended: Indicates whether this video is an extended generation; 0 means it is not an extended generation, otherwise it is an extended generation.
+  - id: The unique ID of the generated video, which can be used for subsequent expansion generation
+  - first_frame: The link to the first frame image of the video
+  - last_frame: The link to the last frame image of the video
+  - video_width: The width of the video result
+  - video_height: The height of the video result
+  - prompt: The prompt word for this video generation task
+  - model: The model used for this video generation task
+  - video_url: The video link for this video generation task
+  - template_id: The ID of the template effects used in the video
+  - template_name: The name of the template effects used in the video
+  - asset_id: The ID of the character used in the video
+  - asset_name: The name of the character used in the video
+  - style: The style of this video generation task
+  - aspect_ratio: The size of this video
+  - extended: Whether this video is an extended generation, 0 means it is not an extended generation, otherwise it is an extended generation
 
 ## Custom First and Last Frame Video Generation
 
 If you want to customize the first and last frames for video generation, you can input the links to the first and last frame images:
 
-At this point, the `frame` field can accept content similar to the following:
+At this time, the `frame` field can accept content similar to the following:
 
 - First frame image
   <p><img src="https://cdn.acedata.cloud/c7zzmb.png" width="500" class="m-auto"></p>
@@ -107,15 +107,15 @@ At this point, the `frame` field can accept content similar to the following:
 
 Next, we need to customize the song generation based on lyrics, title, and style, specifying the following content:
 
-- action: The action for this video generation task, which can be either generate video `action` or extend video `extend`.
-- prompt: The prompt for this video generation task.
-- frame: An array of video links for the first and last frames.
+- action: The action for this video generation task, which can be either generate video `action` or extend video `extend`
+- prompt: The prompt word for this video generation task.
+- frame: An array of video links for the first and last frames generated.
 
 An example of the filled content is as follows:
 
 <p><img src="https://cdn.acedata.cloud/4ea6pa.png" width="500" class="m-auto"></p>
 
-After filling in, the code is automatically generated as follows:
+After filling in, the generated code is as follows:
 
 <p><img src="https://cdn.acedata.cloud/yfzxxn.png" width="500" class="m-auto"></p>
 
@@ -187,7 +187,7 @@ If you want to use specific video template effects to generate videos, you only 
         "created_at": "2024-10-24T03:55:29Z",
         "updated_at": "2025-01-06T05:32:53Z",
         "display_prompt": "The [OBJECT] comes to life and walks out of the [SCENE]",
-        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Vividly Alive\",\"display_prompt\":\"It is alive!\"}}",
+        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Vividly Alive\",\"display_prompt\":\"It's alive!\"}}",
         "example_list": "",
         "qualities": [
             "360p",
@@ -205,7 +205,7 @@ If you want to use specific video template effects to generate videos, you only 
         "created_at": "2024-12-08T15:14:11Z",
         "updated_at": "2024-12-25T10:19:28Z",
         "display_prompt": "Change hairstyle for a better mood",
-        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Everything Can Be Curled\",\"display_prompt\":\"Feeling down? Change your hairstyle and see\"}}",
+        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Everything Can Be Curled\",\"display_prompt\":\"Feeling down? Change your hairstyle!\"}}",
         "example_list": "[{\"img_id\":113741803,\"img_url\":\"https://media.pixverse.ai/upload%2Fb2626bc2-050d-4ea6-a864-e2054c012df5.png\"},{\"img_id\":113750690,\"img_url\":\"https://media.pixverse.ai/upload%2Fddd29e75-beeb-461c-9388-3e14c2709e73.png\"}]",
         "qualities": [
             "360p",
@@ -279,7 +279,7 @@ If you want to use specific video template effects to generate videos, you only 
         "created_at": "2024-12-15T03:17:26Z",
         "updated_at": "2024-12-30T06:08:24Z",
         "display_prompt": "Discovering Santa Claus in the parallel world!",
-        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Where is Santa?\",\"display_prompt\":\"Discovering Santa Claus around the world\"}}",
+        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Where is Santa Claus?\",\"display_prompt\":\"“Discover” Santa Claus all over the world\"}}",
         "example_list": "[{\"img_id\":119280295,\"img_url\":\"https://media.pixverse.ai/upload%2Fde34a072-325e-4d86-88d9-2daef292e1b4.jpeg\"},{\"img_id\":119280616,\"img_url\":\"https://media.pixverse.ai/upload%2F5b4da0a2-86c3-4204-adda-74bfa7c3d0d1.jpg\"}]",
         "qualities": [
             "360p",
@@ -347,7 +347,7 @@ If you want to use specific video template effects to generate videos, you only 
         "created_at": "2024-11-22T08:22:15Z",
         "updated_at": "2024-12-26T07:40:24Z",
         "display_prompt": "Transform into a Crazy Cat Woman and slay",
-        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Crazy Cat Woman Transformation\",\"display_prompt\":\"Transform into a charming Cat Woman, captivating everyone!\"}}",
+        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Crazy Cat Woman Transformation\",\"display_prompt\":\"Transform into a charming Cat Woman, slaying the scene!\"}}",
         "example_list": "[{\"img_id\":113742074,\"img_url\":\"https://media.pixverse.ai/upload%2F50ed9020-7b58-4dd9-aa39-ff06b9e0df12.png\"},{\"img_id\":113750690,\"img_url\":\"https://media.pixverse.ai/upload%2Fddd29e75-beeb-461c-9388-3e14c2709e73.png\"},{\"img_id\":113750791,\"img_url\":\"https://media.pixverse.ai/upload%2Ff2853009-8238-4e0f-93ec-cfc68fee28b7.png\"}]",
         "qualities": [
             "360p",
@@ -661,7 +661,7 @@ If you want to use specific video template effects to generate videos, you only 
 ]
 ```
 
-We can choose a `template_id` from above to generate a video. We use `302325299651648` as an example to generate a video, and the other parameters are similar to basic usage. The specific parameters are shown in the image below:
+We can choose a `template_id` from above to generate a video. We take `302325299651648` as an example to generate a video, and the other parameters are similar to basic usage. The specific parameters are shown in the image below:
 
 <p><img src="https://cdn.acedata.cloud/pwbyma.png" width="500" class="m-auto"></p>
 
@@ -693,7 +693,7 @@ response = requests.post(url, json=payload, headers=headers)
 print(response.text)
 ```
 
-Clicking run, you can find that a result is obtained, as follows:
+Clicking run, you can find that a result will be obtained, as follows:
 
 ```json
 {
@@ -730,7 +730,7 @@ It can be seen that the result content is the same as the video template effect,
 
 ## Continue to expand video generation function
 
-If you want to expand the generated Pixverse video, you can set the parameter `action` to `extend`, and input the ID of the video to be expanded. The video ID can be obtained based on basic usage, as shown in the image below:
+If you want to extend the generated Pixverse video, you can set the parameter `action` to `extend`, and input the ID of the video to be extended. The video ID can be obtained based on basic usage, as shown in the image below:
 
 <p><img src="https://cdn.acedata.cloud/kwcdyg.png" width="500" class="m-auto"></p>
 
@@ -740,13 +740,13 @@ At this time, you can see that the video ID is:
 "id": 317989274748288
 ```
 
-> Note that the `id` here is the ID of the generated video. If you do not know how to generate a video, you can refer to the basic usage above to generate a video.
+> Note that the `id` here is the ID of the generated video. If you do not know how to generate a video, you can refer to the basic usage mentioned above to generate a video.
 
 Next, we must fill in the lyrics and style to customize the generated song, and we can specify the following content:
 
 - action: The behavior of this video generation task, generally there are normal generation `generate` and extended video `extend`.
 - prompt: The prompt for this video generation.
-- video_id: The reference video ID for this expansion video task.
+- video_id: The reference video ID for this extension task.
 
 An example of filling in is as follows:
 
@@ -779,7 +779,7 @@ response = requests.post(url, json=payload, headers=headers)
 print(response.text)
 ```
 
-Clicking run, you can find that a result is obtained, as follows:
+Clicking run, you can find that a result will be obtained, as follows:
 ```
 ```json
 {
@@ -816,8 +816,7 @@ It can be seen that the result content is consistent with the above text, which 
 
 ## Custom Character Video Generation
 
-If you want to generate a video based on a character from an image, you need to additionally input the character created from the image  
-The ID field `asset_id`, the acquisition of field `asset_id` is done using the [Pixverse Character API](https://platform.acedata.cloud/documents/32f3dd45-7000-49c2-a38e-285bd02ae334), the specific result is shown in the image below:
+If you want to generate a video based on a character from an image, you need to additionally input the character ID field `asset_id`, which can be obtained using the [Pixverse Character API](https://platform.acedata.cloud/documents/32f3dd45-7000-49c2-a38e-285bd02ae334). The specific result is shown in the image below:
 
 <p><img src="https://cdn.acedata.cloud/xj2l9e.png" width="500" class="m-auto"></p>
 
@@ -858,63 +857,63 @@ After clicking run, you can generate the video result of the custom character, a
 }
 ```
 
-The generated result is similar to the above text, thus completing the process of generating a video based on the character.
+The generated result is similar to the above text, completing the process of generating a video based on the character.
 
 ## Currently Supported Special Effect Templates
 
 ### Template IDs and Corresponding Effects:
 
-| Template ID       | Effect                |
-| ----------------- | --------------------- |
-| 321958627120000   | AI发对象咯             |
-| 324641581197696   | 一起摇摆！              |
-| 324641385496960   | 360°旋转微波炉        |
-| 325367418993728   | 樱花乌托邦            |
-| 325501134629952   | 北极熊出没！           |
-| 315447659476032   | 不打不相识            |
-| 324640938615168   | 万物皆可毛绒玩具       |
-| 308621408717184   | 成为肌肉猛男          |
-| 313358700761536   | 万物皆可变形金刚       |
-| 316645675647872   | 雪茄大佬             |
-| 321956810449792   | 奥斯卡影帝            |
-| 323578865822784   | 性别转换器            |
-| 303624424723200   | 爱的抱抱             |
-| 313555098280384   | 换上比基尼            |
-| 313649491716544   | 猛虎的抱抱            |
-| 313649622731200   | 天使之翼             |
-| 316826014376384   | 拥抱耶稣             |
-| 315446315336768   | 爱的亲亲             |
-| 322852853601344   | 万物皆可走红毯        |
-| 304826314164992   | 绿巨人变身            |
-| 315447659476032   | 黑悟空引擎            |
-| 313359138372032   | 成为美少女战士        |
-| 308552687706496   | 发量王者             |
-| 307489548427968   | 疯狂猫女变身          |
-| 304826126435072   | 小丑重生              |
-| 304826374632192   | 蝙蝠侠归来            |
-| 304358279051648   | 毒液！(彩色盲盒版)     |
-| 304826054394624   | 钢铁侠变身            |
-| 317013509917440   | 新年战裙              |
-| 313358844899776   | 做自己的财神          |
-| 313359048325568   | 蛇年的第一个贴贴      |
-| 307489434436288   | 小丑女哈莉·奎茵变身   |
-| 311521768592256   | 圣诞礼物盲盒          |
-| 311521879229312   | 圣诞老人藏在哪？       |
-| 312314911869312   | 圣诞战袍              |
-| 306059795500352   | 召唤毒液兄弟          |
-| 303788802773760   | 扫射一切              |
-| 302325299702848   | 乐高大爆炸            |
-| 302325299682368   | 怪兽入侵              |
-| 302325299661888   | 戴上魔法帽            |
-| 302325299651648   | 坏了，我变僵尸了       |
-| 302325299672128   | 僵尸手出没            |
+| Template ID       | Effect               |
+| ----------------- | -------------------- |
+| 321958627120000   | AI object generation  |
+| 324641581197696   | Let's sway together!  |
+| 324641385496960   | 360° rotating microwave |
+| 325367418993728   | Cherry blossom utopia  |
+| 325501134629952   | Polar bear appearance!  |
+| 315447659476032   | No fight, no acquaintance |
+| 324640938615168   | Everything can be a plush toy |
+| 308621408717184   | Become a muscle man    |
+| 313358700761536   | Everything can be Transformers |
+| 316645675647872   | Cigar boss            |
+| 321956810449792   | Oscar best actor      |
+| 323578865822784   | Gender converter       |
+| 303624424723200   | Love hug              |
+| 313555098280384   | Change into a bikini   |
+| 313649491716544   | Tiger's hug           |
+| 313649622731200   | Angel's wings         |
+| 316826014376384   | Hug Jesus             |
+| 315446315336768   | Love kiss             |
+| 322852853601344   | Everything can walk the red carpet |
+| 304826314164992   | Hulk transformation    |
+| 315447659476032   | Black Goku engine     |
+| 313359138372032   | Become a Sailor Moon   |
+| 308552687706496   | Hair king             |
+| 307489548427968   | Crazy Catwoman transformation |
+| 304826126435072   | Joker reborn          |
+| 304826374632192   | Batman returns        |
+| 304358279051648   | Venom! (Color blind box version) |
+| 304826054394624   | Iron Man transformation |
+| 317013509917440   | New Year battle skirt  |
+| 313358844899776   | Be your own wealth god |
+| 313359048325568   | First sticker of the Year of the Snake |
+| 307489434436288   | Harley Quinn transformation |
+| 311521768592256   | Christmas gift blind box |
+| 311521879229312   | Where is Santa hiding? |
+| 312314911869312   | Christmas battle robe  |
+| 306059795500352   | Summon Venom brothers  |
+| 303788802773760   | Sweep everything       |
+| 302325299702848   | LEGO explosion        |
+| 302325299682368   | Monster invasion      |
+| 302325299661888   | Wear a magic hat      |
+| 302325299651648   | Oh no, I turned into a zombie |
+| 302325299672128   | Zombie hand appearance |
 
 ### Styles:
 
 | Motion Mode | Effect     |
 | ----------- | ---------- |
-| normal      | Normal Mode |
-| fast        | Performance Mode |
+| normal      | Normal mode |
+| fast        | Performance mode |
 
 ### Camera Movement
 | Parameter          | Effect       |
@@ -927,18 +926,18 @@ The generated result is similar to the above text, thus completing the process o
 | hitchcock          | Hitchcock zoom |
 | zoom_in            | Zoom in      |
 | zoom_out           | Zoom out     |
-| quickly_zoom_in    | Quick zoom in |
-| quickly_zoom_out   | Quick zoom out |
-| smooth_zoom_in     | Smooth zoom in |
-| super_dolly_out    | Super zoom out |
-| left_follow        | Left follow  |
-| right_follow       | Right follow |
-| pan_left           | Pan left arc |
-| pan_right          | Pan right arc |
+| quickly_zoom_in    | Quick push   |
+| quickly_zoom_out   | Quick pull back |
+| smooth_zoom_in     | Smooth push  |
+| super_dolly_out    | Super pull back |
+| left_follow        | Left side follow |
+| right_follow       | Right side follow |
+| pan_left           | Left arc pan |
+| pan_right          | Right arc pan |
 | fix_bg             | Fixed shot   |
 | camera_rotation     | Camera rotation |
 | robo_arm           | Robotic arm movement |
-| whip_pan           | Quick pan    |
+| whip_pan           | Quick whip pan |
 
 ## Asynchronous Callback
 
