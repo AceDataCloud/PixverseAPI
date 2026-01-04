@@ -35,7 +35,7 @@ Main request parameters:
 - `aspect_ratio`: Aspect ratio, default is `16:9`.
 - `seed`: Optional, fixed random seed.
 - `template_id`: Optional, specify template effects.
-- `callback_url`: URL for callback results.
+- `callback_url`: The URL for callback results.
 
 You can click the "Try" button to directly test the API, wait for 1-2 minutes, and the result is as follows:
 
@@ -70,35 +70,35 @@ You can click the "Try" button to directly test the API, wait for 1-2 minutes, a
 }
 ```
 
-At this point, we have obtained the content of a video, including video ID, video link, video clarity, video duration, and other details.
+At this point, we have obtained the content of a video, including video ID, video link, video clarity, video duration, and other content.
 
 Field descriptions are as follows:
 
-- success: Indicates whether the generation was successful; if successful, it is `true`, otherwise it is `false`.
-- task_id: The ID of this generation task.
-- trace_id: The tracking ID of this generation task.
+- success: Whether the generation was successful, if successful then `true`, otherwise `false`
+- task_id: The ID of this generation task
+- trace_id: The tracking ID of this generation task
 - data: A list containing detailed information about the generated video.
-  - id: The unique ID of the generated video, which can be used for subsequent extension generation.
-  - first_frame: The link to the first frame image of the video.
-  - last_frame: The link to the last frame image of the video.
-  - video_width: The width of the video result.
-  - video_height: The height of the video result.
-  - prompt: The prompt for this video generation task.
-  - model: The model used for this video generation task.
-  - video_url: The video link for this generation task.
-  - template_id: The ID of the template effects used in the video.
-  - template_name: The name of the template effects used in the video.
-  - asset_id: The ID of the character used in the video.
-  - asset_name: The name of the character used in the video.
-  - style: The style of this video generation task.
-  - aspect_ratio: The size of this video.
-  - extended: Indicates whether this video is an extended generation; 0 means it is not an extended generation, otherwise it is an extended generation.
+  - id: The unique ID of the generated video, which can be used for subsequent expansion generation
+  - first_frame: The link to the first frame image of the video
+  - last_frame: The link to the last frame image of the video
+  - video_width: The width of the video result
+  - video_height: The height of the video result
+  - prompt: The prompt for this video generation task
+  - model: The model used for this video generation task
+  - video_url: The video link for this video generation task
+  - template_id: The ID of the template effects used in the video
+  - template_name: The name of the template effects used in the video
+  - asset_id: The ID of the character used in the video
+  - asset_name: The name of the character used in the video
+  - style: The style of this video generation task
+  - aspect_ratio: The size of this video
+  - extended: Whether this video is an extended generation, 0 means it is not an extended generation, otherwise it is an extended generation
 
 ## Custom First and Last Frame Video Generation
 
 If you want to customize the first and last frames for video generation, you can input the links to the first and last frame images:
 
-At this point, the `frame` field can accept content similar to the following:
+At this time, the `frame` field can accept content similar to the following:
 
 - First frame image
   <p><img src="https://cdn.acedata.cloud/c7zzmb.png" width="500" class="m-auto"></p>
@@ -107,11 +107,11 @@ At this point, the `frame` field can accept content similar to the following:
 
 Next, we need to customize the song generation based on lyrics, title, and style, specifying the following content:
 
-- action: The action for this video generation task, which can be either generate video `action` or extend video `extend`.
+- action: The action for this video generation task, which can be either generate video `action` or extend video `extend`
 - prompt: The prompt for this video generation task.
-- frame: An array of video links for the first and last frames.
+- frame: An array of video links for the first and last frames generated.
 
-An example of the filled content is as follows:
+An example of the input is as follows:
 
 <p><img src="https://cdn.acedata.cloud/4ea6pa.png" width="500" class="m-auto"></p>
 
@@ -187,7 +187,7 @@ If you want to use specific video template effects to generate videos, you only 
         "created_at": "2024-10-24T03:55:29Z",
         "updated_at": "2025-01-06T05:32:53Z",
         "display_prompt": "The [OBJECT] comes to life and walks out of the [SCENE]",
-        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Vividly Alive\",\"display_prompt\":\"It's alive!\"}}",
+        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Lively\",\"display_prompt\":\"It is alive!\"}}",
         "example_list": "",
         "qualities": [
             "360p",
@@ -223,7 +223,7 @@ If you want to use specific video template effects to generate videos, you only 
         "created_at": "2024-12-25T12:29:05Z",
         "updated_at": "2025-01-06T05:32:33Z",
         "display_prompt": "Moon Prism Power, Make Up!",
-        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Become a Magical Girl\",\"display_prompt\":\"Moon Crystal Power, Transform!\"}}",
+        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Become a Sailor Soldier\",\"display_prompt\":\"Moon Crystal Power, Transform!\"}}",
         "example_list": "",
         "qualities": [
             "360p",
@@ -279,7 +279,7 @@ If you want to use specific video template effects to generate videos, you only 
         "created_at": "2024-12-15T03:17:26Z",
         "updated_at": "2024-12-30T06:08:24Z",
         "display_prompt": "Discovering Santa Claus in the parallel world!",
-        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Where is Santa Claus?\",\"display_prompt\":\"“Discover” Santa Claus all over the world\"}}",
+        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Where is Santa?\",\"display_prompt\":\"Discovering Santa Claus around the world\"}}",
         "example_list": "[{\"img_id\":119280295,\"img_url\":\"https://media.pixverse.ai/upload%2Fde34a072-325e-4d86-88d9-2daef292e1b4.jpeg\"},{\"img_id\":119280616,\"img_url\":\"https://media.pixverse.ai/upload%2F5b4da0a2-86c3-4204-adda-74bfa7c3d0d1.jpg\"}]",
         "qualities": [
             "360p",
@@ -347,7 +347,7 @@ If you want to use specific video template effects to generate videos, you only 
         "created_at": "2024-11-22T08:22:15Z",
         "updated_at": "2024-12-26T07:40:24Z",
         "display_prompt": "Transform into a Crazy Cat Woman and slay",
-        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Crazy Cat Woman Transformation\",\"display_prompt\":\"Transform into a charming Cat Woman, slaying the crowd!\"}}",
+        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Crazy Cat Woman Transformation\",\"display_prompt\":\"Transform into a charming Cat Woman, captivating everyone!\"}}",
         "example_list": "[{\"img_id\":113742074,\"img_url\":\"https://media.pixverse.ai/upload%2F50ed9020-7b58-4dd9-aa39-ff06b9e0df12.png\"},{\"img_id\":113750690,\"img_url\":\"https://media.pixverse.ai/upload%2Fddd29e75-beeb-461c-9388-3e14c2709e73.png\"},{\"img_id\":113750791,\"img_url\":\"https://media.pixverse.ai/upload%2Ff2853009-8238-4e0f-93ec-cfc68fee28b7.png\"}]",
         "qualities": [
             "360p",
@@ -728,7 +728,7 @@ Clicking run, you can find that a result is obtained, as follows:
 
 It can be seen that the result content is the same as the video template effect, which also realizes the function of generating videos using template effects.
 
-## Continue to Expand Video Generation Function
+## Continue to expand video generation function
 
 If you want to expand the generated Pixverse video, you can set the parameter `action` to `extend`, and input the ID of the video to be expanded. The video ID can be obtained based on basic usage, as shown in the image below:
 
@@ -748,7 +748,7 @@ Next, we must fill in the lyrics and style to customize the generated song, spec
 - prompt: The prompt for this video generation.
 - video_id: The reference video ID for this expansion video task.
 
-The sample input is as follows:
+An example of filling in is as follows:
 
 <p><img src="https://cdn.acedata.cloud/hio4x5.png" width="500" class="m-auto"></p>
 
@@ -817,7 +817,7 @@ It can be seen that the result content is consistent with the above text, which 
 ## Custom Character Video Generation
 
 If you want to generate a video based on a character from an image, you need to additionally input the character created from the image  
-The ID field `asset_id`, the acquisition of the `asset_id` field is done using the [Pixverse Character API](https://platform.acedata.cloud/documents/32f3dd45-7000-49c2-a38e-285bd02ae334), the specific result is shown in the image below:
+The ID field `asset_id`, the acquisition of field `asset_id` is done using the [Pixverse Character API](https://platform.acedata.cloud/documents/32f3dd45-7000-49c2-a38e-285bd02ae334), the specific result is shown in the image below:
 
 <p><img src="https://cdn.acedata.cloud/xj2l9e.png" width="500" class="m-auto"></p>
 
@@ -938,7 +938,7 @@ The generated result is similar to the above text, thus completing the process o
 | fix_bg             | Fixed shot   |
 | camera_rotation     | Camera rotation |
 | robo_arm           | Robotic arm movement |
-| whip_pan           | Quick whip pan |
+| whip_pan           | Quick pan    |
 
 ## Asynchronous Callback
 
