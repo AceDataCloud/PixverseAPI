@@ -89,7 +89,7 @@ print(response.text)
 
 ### Response Example
 
-Upon successful request, the API will return the detailed information of the video task here. For example:
+Upon a successful request, the API will return the detailed information of the video task here. For example:
 
 ```json
 {
@@ -165,7 +165,7 @@ Some code examples are as follows:
 
 ### Response Example
 
-Upon successful request, the API will return the specific details of all batch video tasks this time. For example:
+Upon a successful request, the API will return the specific details of all batch video tasks this time. For example:
 ```json
 {
   "items": [
