@@ -6,11 +6,11 @@ This document will provide detailed integration instructions for the Pixverse Ta
 
 ## Application Process
 
-To use the Pixverse Tasks API, you first need to apply for the corresponding service on the application page [Pixverse Videos Generation API](https://platform.acedata.cloud/documents/00f200b3-709d-4783-ac56-3d27cc70b73d), and then copy the task ID from the Pixverse Videos Generation API, as shown in the image:
+To use the Pixverse Tasks API, you first need to apply for the corresponding service on the application page [Pixverse Videos Generation API](https://platform.acedata.cloud/documents/00f200b3-709d-4783-ac56-3d27cc70b73d), and then copy the task ID from the Pixverse Videos Generation API, as shown in the image below:
 
 <p><img src="https://cdn.acedata.cloud/3oqspi.png" width="500" class="m-auto"></p>
 
-Finally, go to the Tasks API page [Pixverse Tasks API](https://platform.acedata.cloud/documents/94d98778-9a98-4e27-bd68-e018a34fae11) to apply for the corresponding service. After entering the page, click the "Acquire" button, as shown in the image:
+Finally, go to the Tasks API page [Pixverse Tasks API](https://platform.acedata.cloud/documents/94d98778-9a98-4e27-bd68-e018a34fae11) to apply for the corresponding service. After entering the page, click the "Acquire" button, as shown in the image below:
 
 ![Application Page](https://cdn.acedata.cloud/rci31i.png)
 
@@ -46,7 +46,7 @@ Set as shown in the image below:
 
 ### Code Example
 
-You can see that various language codes have been automatically generated on the right side of the page, as shown in the image:
+You can see that various language codes have been automatically generated on the right side of the page, as shown in the image below:
 
 <p><img src="https://cdn.acedata.cloud/fifda3.png" width="500" class="m-auto"></p>
 
@@ -157,7 +157,7 @@ Set as shown in the image below:
 
 ### Code Example
 
-You can see that various language codes have been automatically generated on the right side of the page, as shown in the image:
+You can see that various language codes have been automatically generated on the right side of the page, as shown in the image below:
 
 <p><img src="https://cdn.acedata.cloud/9jipxg.png" width="500" class="m-auto"></p>
 
