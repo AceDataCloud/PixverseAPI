@@ -35,7 +35,7 @@ Main request parameters:
 - `aspect_ratio`: Aspect ratio, default is `16:9`.
 - `seed`: Optional, fixed random seed.
 - `template_id`: Optional, specify template effects.
-- `callback_url`: The URL to receive callback results.
+- `callback_url`: URL for callback results.
 
 You can click the "Try" button to directly test the API, wait for 1-2 minutes, and the result is as follows:
 
@@ -98,7 +98,7 @@ Field descriptions are as follows:
 
 If you want to customize the first and last frames for video generation, you can input the links to the first and last frame images:
 
-At this time, the `frame` field can accept content similar to the following:
+At this point, the `frame` field can accept content similar to the following:
 
 - First frame image
   <p><img src="https://cdn.acedata.cloud/c7zzmb.png" width="500" class="m-auto"></p>
@@ -111,11 +111,11 @@ Next, we need to customize the song generation based on lyrics, title, and style
 - prompt: The prompt for this video generation task.
 - frame: An array of video links for the first and last frames generated.
 
-An example of the input is as follows:
+An example of the filled content is as follows:
 
 <p><img src="https://cdn.acedata.cloud/4ea6pa.png" width="500" class="m-auto"></p>
 
-After filling in, the code is automatically generated as follows:
+After filling in, the generated code is as follows:
 
 <p><img src="https://cdn.acedata.cloud/yfzxxn.png" width="500" class="m-auto"></p>
 
@@ -187,7 +187,7 @@ If you want to use specific video template effects to generate videos, you only 
         "created_at": "2024-10-24T03:55:29Z",
         "updated_at": "2025-01-06T05:32:53Z",
         "display_prompt": "The [OBJECT] comes to life and walks out of the [SCENE]",
-        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Lively\",\"display_prompt\":\"It is alive!\"}}",
+        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Lively\",\"display_prompt\":\"It’s alive!\"}}",
         "example_list": "",
         "qualities": [
             "360p",
@@ -205,7 +205,7 @@ If you want to use specific video template effects to generate videos, you only 
         "created_at": "2024-12-08T15:14:11Z",
         "updated_at": "2024-12-25T10:19:28Z",
         "display_prompt": "Change hairstyle for a better mood",
-        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Everything Can Be Curled\",\"display_prompt\":\"Feeling down? Change your hairstyle!\"}}",
+        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Everything Can Be Curly Wool\",\"display_prompt\":\"Feeling down? Change your hairstyle and see\"}}",
         "example_list": "[{\"img_id\":113741803,\"img_url\":\"https://media.pixverse.ai/upload%2Fb2626bc2-050d-4ea6-a864-e2054c012df5.png\"},{\"img_id\":113750690,\"img_url\":\"https://media.pixverse.ai/upload%2Fddd29e75-beeb-461c-9388-3e14c2709e73.png\"}]",
         "qualities": [
             "360p",
@@ -223,7 +223,7 @@ If you want to use specific video template effects to generate videos, you only 
         "created_at": "2024-12-25T12:29:05Z",
         "updated_at": "2025-01-06T05:32:33Z",
         "display_prompt": "Moon Prism Power, Make Up!",
-        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Become a Sailor Senshi\",\"display_prompt\":\"Moon Crystal Power, Transform!\"}}",
+        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Become a Magical Girl\",\"display_prompt\":\"Moon Crystal Power, Transform!\"}}",
         "example_list": "",
         "qualities": [
             "360p",
@@ -279,7 +279,7 @@ If you want to use specific video template effects to generate videos, you only 
         "created_at": "2024-12-15T03:17:26Z",
         "updated_at": "2024-12-30T06:08:24Z",
         "display_prompt": "Discovering Santa Claus in the parallel world!",
-        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Where is Santa?\",\"display_prompt\":\"Discovering Santa Claus around the world\"}}",
+        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Where is Santa Claus?\",\"display_prompt\":\"“Discover” Santa Claus all over the world\"}}",
         "example_list": "[{\"img_id\":119280295,\"img_url\":\"https://media.pixverse.ai/upload%2Fde34a072-325e-4d86-88d9-2daef292e1b4.jpeg\"},{\"img_id\":119280616,\"img_url\":\"https://media.pixverse.ai/upload%2F5b4da0a2-86c3-4204-adda-74bfa7c3d0d1.jpg\"}]",
         "qualities": [
             "360p",
@@ -315,7 +315,7 @@ If you want to use specific video template effects to generate videos, you only 
         "created_at": "2024-10-31T12:08:42Z",
         "updated_at": "2024-12-25T10:19:28Z",
         "display_prompt": "Transform into a [BLACK] Venom",
-        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Venom Transformation!\",\"display_prompt\":\"Transform into [BLACK] Venom\"}}",
+        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Venom Transformation!\",\"display_prompt\":\"Transform into [Black] Venom\"}}",
         "example_list": "[{\"img_id\":113750602,\"img_url\":\"https://media.pixverse.ai/upload%2F920dc791-8c9f-4518-8761-82958a827190.png\"},{\"img_id\":113750690,\"img_url\":\"https://media.pixverse.ai/upload%2Fddd29e75-beeb-461c-9388-3e14c2709e73.png\"},{\"img_id\":113750791,\"img_url\":\"https://media.pixverse.ai/upload%2Ff2853009-8238-4e0f-93ec-cfc68fee28b7.png\"}]",
         "qualities": [
             "360p",
@@ -661,7 +661,7 @@ If you want to use specific video template effects to generate videos, you only 
 ]
 ```
 
-We can choose a `template_id` from above to generate a video. We take `302325299651648` as an example to generate a video, and other parameters are similar to basic usage. The specific parameters are shown in the image below:
+We can choose a `template_id` from above to generate a video. We take `302325299651648` as an example to generate a video, and the other parameters are similar to basic usage. The specific parameters are shown in the image below:
 
 <p><img src="https://cdn.acedata.cloud/pwbyma.png" width="500" class="m-auto"></p>
 
@@ -693,7 +693,7 @@ response = requests.post(url, json=payload, headers=headers)
 print(response.text)
 ```
 
-Clicking run, you can find that a result is obtained, as follows:
+Clicking run, you can find that a result will be obtained, as follows:
 
 ```json
 {
@@ -742,7 +742,7 @@ At this time, you can see that the video ID is:
 
 > Note that the `id` here is the ID of the generated video. If you do not know how to generate a video, you can refer to the basic usage above to generate a video.
 
-Next, we must fill in the lyrics and style to customize the generated song, and specify the following content:
+Next, we must fill in the lyrics and style to customize the generated song, and we can specify the following content:
 
 - action: The behavior of this video generation task, generally there are normal generation `generate` and extended video `extend`.
 - prompt: The prompt for this video generation.
@@ -779,7 +779,7 @@ response = requests.post(url, json=payload, headers=headers)
 print(response.text)
 ```
 
-Clicking run, you can find that a result is obtained, as follows:
+Clicking run, you can find that a result will be obtained, as follows:
 ```
 ```json
 {
@@ -817,7 +817,7 @@ It can be seen that the result content is consistent with the above text, which 
 ## Custom Character Video Generation
 
 If you want to generate a video based on a character from an image, you need to additionally input the character created from the image  
-The ID field `asset_id`, the acquisition of the `asset_id` field is done using the [Pixverse Character API](https://platform.acedata.cloud/documents/32f3dd45-7000-49c2-a38e-285bd02ae334), the specific result is shown in the image below:
+The ID field `asset_id`, the acquisition of the field `asset_id` is done using the [Pixverse Character API](https://platform.acedata.cloud/documents/32f3dd45-7000-49c2-a38e-285bd02ae334), the specific result is shown in the image below:
 
 <p><img src="https://cdn.acedata.cloud/xj2l9e.png" width="500" class="m-auto"></p>
 
@@ -933,12 +933,12 @@ The generated result is similar to the above text, thus completing the process o
 | super_dolly_out    | Super pull back |
 | left_follow        | Left side follow |
 | right_follow       | Right side follow |
-| pan_left           | Left arc pan |
-| pan_right          | Right arc pan |
+| pan_left           | Left arc     |
+| pan_right          | Right arc    |
 | fix_bg             | Fixed shot   |
 | camera_rotation     | Camera rotation |
 | robo_arm           | Robotic arm movement |
-| whip_pan           | Quick whip pan |
+| whip_pan           | Quick pan    |
 
 ## Asynchronous Callback
 
@@ -946,9 +946,9 @@ Due to the relatively long time it takes for Pixverse to generate music, approxi
 
 The overall process is: when the client initiates a request, an additional `callback_url` field is specified. After the client initiates the API request, the API will immediately return a result containing a `task_id` field, representing the current task ID. When the task is completed, the generated music result will be sent to the client-specified `callback_url` in the form of a POST JSON, which also includes the `task_id` field, allowing the task result to be associated by ID.
 
-Let's understand how to operate specifically through an example.
+Let’s understand how to operate specifically through an example.
 
-First, the Webhook callback is a service that can receive HTTP requests, and developers should replace it with the URL of their own HTTP server. For demonstration purposes, we use a public Webhook sample site https://webhook.site/, where you can obtain a Webhook URL as shown in the image:
+First, the Webhook callback is a service that can receive HTTP requests, and developers should replace it with the URL of their own HTTP server. For demonstration purposes, we use a public Webhook sample site https://webhook.site/, where you can open the site to get a Webhook URL, as shown in the image:
 
 ![](https://cdn.acedata.cloud/fwfqin.png)
 
@@ -958,7 +958,7 @@ Next, we can set the `callback_url` field to the above Webhook URL and fill in t
 
 <p><img src="https://cdn.acedata.cloud/au5m49.png" width="500" class="m-auto"></p>
 
-Clicking run, you will immediately receive a result as follows:
+Clicking run, you will find that an immediate result is obtained, as follows:
 
 ```
 {
