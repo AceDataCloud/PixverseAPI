@@ -148,7 +148,7 @@ This is for querying the details of multiple task IDs, and unlike the above, the
 
 **Request Body** includes:
 
-- `ids`: An array of uploaded task IDs.
+- `ids`: The array of uploaded task IDs.
 - `action`: The operation method for the task.
 
 Set as shown in the image below:
