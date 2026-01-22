@@ -7,7 +7,7 @@ API home page: [Ace Data Cloud - Pixverse Video Generation](https://platform.ace
 ## Get Started
 
 
-This document will introduce the Pixverse Videos Generation API integration instructions, which can generate official Pixverse videos by inputting custom parameters.
+This document will introduce the integration instructions for the Pixverse Videos Generation API, which can generate official Pixverse videos by inputting custom parameters.
 
 ### Application and Usage
 
@@ -21,7 +21,7 @@ Upon the first application, there will be a free quota provided, allowing you to
 
 ### Basic Usage
 
-You can generate videos based on prompts, for example, you can input `quiver`, as shown in the image:
+You can generate videos based on prompt words, for example, you can input `quiver`, as shown in the image:
 
 <p><img src="https://cdn.acedata.cloud/azz8d3.png" width="500" class="m-auto"></p>
 
@@ -33,7 +33,7 @@ Main request parameters:
 
 - `model`: The model for generating the video, default is `v3.5`.
 - `action`: The action for generating the video, default is `generate`, optional `extend`.
-- `prompt`: The prompt for generating the video (required).
+- `prompt`: The prompt word for generating the video (required).
 - `style`: Optional video style.
 - `motion`: Motion mode, default is normal.
 - `quality`: Video clarity, default is `540p`.
@@ -90,7 +90,7 @@ Field descriptions are as follows:
   - last_frame: The link to the last frame image of the video
   - video_width: The width of the video result
   - video_height: The height of the video result
-  - prompt: The prompt for this video generation task
+  - prompt: The prompt word for this video generation task
   - model: The model used for this video generation task
   - video_url: The video link for this video generation task
   - template_id: The ID of the template effects used in the video
@@ -115,7 +115,7 @@ At this point, the `frame` field can accept content similar to the following:
 Next, we need to customize the song generation based on lyrics, title, and style, specifying the following content:
 
 - action: The action for this video generation task, which can be either generate video `action` or extend video `extend`
-- prompt: The prompt for this video generation task.
+- prompt: The prompt word for this video generation task.
 - frame: An array of video links for the first and last frames generated.
 
 An example of the filled content is as follows:
@@ -158,7 +158,7 @@ If you want to use specific video template effects to generate videos, you only 
         "created_at": "2024-11-28T17:53:21Z",
         "updated_at": "2024-12-25T10:19:28Z",
         "display_prompt": "Show off your strong muscles and have everyone hooked.",
-        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Become a Muscle Man\",\"display_prompt\":\"Experience the joy of being muscular\"}}",
+        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Become a Muscle Man\",\"display_prompt\":\"Experience the joy of being a muscle man\"}}",
         "example_list": "[{\"img_id\":113750602,\"img_url\":\"https://media.pixverse.ai/upload%2F920dc791-8c9f-4518-8761-82958a827190.png\"},{\"img_id\":113750690,\"img_url\":\"https://media.pixverse.ai/upload%2Fddd29e75-beeb-461c-9388-3e14c2709e73.png\"},{\"img_id\":113750791,\"img_url\":\"https://media.pixverse.ai/upload%2Ff2853009-8238-4e0f-93ec-cfc68fee28b7.png\"}]",
         "qualities": [
             "360p",
@@ -194,7 +194,7 @@ If you want to use specific video template effects to generate videos, you only 
         "created_at": "2024-10-24T03:55:29Z",
         "updated_at": "2025-01-06T05:32:53Z",
         "display_prompt": "The [OBJECT] comes to life and walks out of the [SCENE]",
-        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Lively\",\"display_prompt\":\"It’s alive!\"}}",
+        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Lively\",\"display_prompt\":\"It is alive!\"}}",
         "example_list": "",
         "qualities": [
             "360p",
@@ -212,7 +212,7 @@ If you want to use specific video template effects to generate videos, you only 
         "created_at": "2024-12-08T15:14:11Z",
         "updated_at": "2024-12-25T10:19:28Z",
         "display_prompt": "Change hairstyle for a better mood",
-        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Everything Can Be Curly Wool\",\"display_prompt\":\"Feeling down? Change your hairstyle and see\"}}",
+        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Everything Can Be Curled\",\"display_prompt\":\"Feeling down? Try a new hairstyle\"}}",
         "example_list": "[{\"img_id\":113741803,\"img_url\":\"https://media.pixverse.ai/upload%2Fb2626bc2-050d-4ea6-a864-e2054c012df5.png\"},{\"img_id\":113750690,\"img_url\":\"https://media.pixverse.ai/upload%2Fddd29e75-beeb-461c-9388-3e14c2709e73.png\"}]",
         "qualities": [
             "360p",
@@ -230,7 +230,7 @@ If you want to use specific video template effects to generate videos, you only 
         "created_at": "2024-12-25T12:29:05Z",
         "updated_at": "2025-01-06T05:32:33Z",
         "display_prompt": "Moon Prism Power, Make Up!",
-        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Become a Magical Girl\",\"display_prompt\":\"Moon Crystal Power, Transform!\"}}",
+        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Become a Sailor Soldier\",\"display_prompt\":\"Moon Crystal Power, Transform!\"}}",
         "example_list": "",
         "qualities": [
             "360p",
@@ -322,7 +322,7 @@ If you want to use specific video template effects to generate videos, you only 
         "created_at": "2024-10-31T12:08:42Z",
         "updated_at": "2024-12-25T10:19:28Z",
         "display_prompt": "Transform into a [BLACK] Venom",
-        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Venom Transformation!\",\"display_prompt\":\"Transform into [Black] Venom\"}}",
+        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Venom Transformation!\",\"display_prompt\":\"Transform into [BLACK] Venom\"}}",
         "example_list": "[{\"img_id\":113750602,\"img_url\":\"https://media.pixverse.ai/upload%2F920dc791-8c9f-4518-8761-82958a827190.png\"},{\"img_id\":113750690,\"img_url\":\"https://media.pixverse.ai/upload%2Fddd29e75-beeb-461c-9388-3e14c2709e73.png\"},{\"img_id\":113750791,\"img_url\":\"https://media.pixverse.ai/upload%2Ff2853009-8238-4e0f-93ec-cfc68fee28b7.png\"}]",
         "qualities": [
             "360p",
@@ -354,7 +354,7 @@ If you want to use specific video template effects to generate videos, you only 
         "created_at": "2024-11-22T08:22:15Z",
         "updated_at": "2024-12-26T07:40:24Z",
         "display_prompt": "Transform into a Crazy Cat Woman and slay",
-        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Crazy Cat Woman Transformation\",\"display_prompt\":\"Transform into a charming Cat Woman, captivating everyone!\"}}",
+        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Crazy Cat Woman Transformation\",\"display_prompt\":\"Transform into a charming Cat Woman, slaying the crowd!\"}}",
         "example_list": "[{\"img_id\":113742074,\"img_url\":\"https://media.pixverse.ai/upload%2F50ed9020-7b58-4dd9-aa39-ff06b9e0df12.png\"},{\"img_id\":113750690,\"img_url\":\"https://media.pixverse.ai/upload%2Fddd29e75-beeb-461c-9388-3e14c2709e73.png\"},{\"img_id\":113750791,\"img_url\":\"https://media.pixverse.ai/upload%2Ff2853009-8238-4e0f-93ec-cfc68fee28b7.png\"}]",
         "qualities": [
             "360p",
@@ -700,7 +700,7 @@ response = requests.post(url, json=payload, headers=headers)
 print(response.text)
 ```
 
-Clicking run, you can find that a result will be obtained, as follows:
+Clicking run, you can find that a result is obtained, as follows:
 
 ```json
 {
@@ -747,7 +747,7 @@ At this time, you can see that the video ID is:
 "id": 317989274748288
 ```
 
-> Note that the `id` here is the ID of the generated video. If you do not know how to generate a video, you can refer to the basic usage above to generate a video.
+> Note that the `id` here is the ID of the generated video. If you do not know how to generate a video, you can refer to the basic usage mentioned above to generate a video.
 
 Next, we must fill in the lyrics and style to customize the generated song, and we can specify the following content:
 
@@ -786,7 +786,7 @@ response = requests.post(url, json=payload, headers=headers)
 print(response.text)
 ```
 
-Clicking run, you can find that a result will be obtained, as follows:
+Clicking run, you can find that a result is obtained, as follows:
 ```
 ```json
 {
