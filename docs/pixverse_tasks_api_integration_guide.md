@@ -14,7 +14,7 @@ Finally, go to the Tasks API page [Pixverse Tasks API](https://platform.acedata.
 
 ![Application Page](https://cdn.acedata.cloud/rci31i.png)
 
-If you have not logged in or registered, you will be automatically redirected to the [login page](https://platform.acedata.cloud) inviting you to register and log in. After logging in or registering, you will be automatically returned to the current page.
+If you are not logged in or registered, you will be automatically redirected to the [login page](https://platform.acedata.cloud) inviting you to register and log in. After logging in or registering, you will be automatically returned to the current page.
 
 There is a free quota available for first-time applicants, allowing you to use this API for free.
 
@@ -22,7 +22,7 @@ There is a free quota available for first-time applicants, allowing you to use t
 
 The Pixverse Tasks API can be used to query the results of the Pixverse Videos Generation API. For information on how to use the Pixverse Videos Generation API, please refer to the document [Pixverse Videos Generation Operation Documentation](https://platform.acedata.cloud/documents/a5c7bf5a-18bf-4943-becc-cfe1356f90ec).
 
-We will take a task ID returned by the Pixverse Videos Generation API as an example to demonstrate how to use this API. Suppose we have a task ID: e3d52b98-b944-438e-b122-1a9141b5626c, and we will demonstrate how to pass in a task ID.
+We will take an example of a task ID returned by the Pixverse Videos Generation API to demonstrate how to use this API. Suppose we have a task ID: e3d52b98-b944-438e-b122-1a9141b5626c, and we will demonstrate how to pass in a task ID.
 
 ### Task Example Image
 
@@ -148,7 +148,7 @@ This is for querying the details of multiple task IDs, and unlike the above, the
 
 **Request Body** includes:
 
-- `ids`: The array of uploaded task IDs.
+- `ids`: An array of uploaded task IDs.
 - `action`: The operation method for the task.
 
 Set as shown in the image below:
