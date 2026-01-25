@@ -14,7 +14,7 @@ Finally, go to the Tasks API page [Pixverse Tasks API](https://platform.acedata.
 
 ![Application Page](https://cdn.acedata.cloud/rci31i.png)
 
-If you are not logged in or registered, you will be automatically redirected to the [login page](https://platform.acedata.cloud) inviting you to register and log in. After logging in or registering, you will be automatically returned to the current page.
+If you have not logged in or registered, you will be automatically redirected to the [login page](https://platform.acedata.cloud) inviting you to register and log in. After logging in or registering, you will be automatically returned to the current page.
 
 There is a free quota available for first-time applicants, allowing you to use this API for free.
 
@@ -46,7 +46,7 @@ Set as shown in the image below:
 
 ### Code Example
 
-You can see that various language codes have been automatically generated on the right side of the page, as shown in the image below:
+You will find that various language codes have been automatically generated on the right side of the page, as shown in the image below:
 
 <p><img src="https://cdn.acedata.cloud/fifda3.png" width="500" class="m-auto"></p>
 
@@ -89,7 +89,7 @@ print(response.text)
 
 ### Response Example
 
-Upon successful request, the API will return the detailed information of the video task here. For example:
+After a successful request, the API will return the detailed information of the video task here. For example:
 
 ```json
 {
@@ -148,7 +148,7 @@ This is for querying the details of multiple task IDs, and unlike the above, the
 
 **Request Body** includes:
 
-- `ids`: The array of uploaded task IDs.
+- `ids`: An array of uploaded task IDs.
 - `action`: The operation method for the task.
 
 Set as shown in the image below:
@@ -157,7 +157,7 @@ Set as shown in the image below:
 
 ### Code Example
 
-You can see that various language codes have been automatically generated on the right side of the page, as shown in the image below:
+You will find that various language codes have been automatically generated on the right side of the page, as shown in the image below:
 
 <p><img src="https://cdn.acedata.cloud/9jipxg.png" width="500" class="m-auto"></p>
 
@@ -165,7 +165,7 @@ Some code examples are as follows:
 
 ### Response Example
 
-Upon successful request, the API will return the specific details of all batch video tasks this time. For example:
+After a successful request, the API will return the specific details of all batch video tasks this time. For example:
 ```json
 {
   "items": [
@@ -258,11 +258,6 @@ Upon successful request, the API will return the specific details of all batch v
 }
 ```
 
-The returned result contains multiple fields, among which items include the specific details of batch video tasks, and the specific information of each video task is the same as the fields above.
-
-- `items`, all specific detail information of batch video tasks. It is an array, and each element of the array has the same format as the return result of querying a single task above.
-- `count`, the number of video tasks in this batch query.
-
 #### CURL
 
 ```bash
@@ -323,4 +318,4 @@ When calling the API, if an error occurs, the API will return the corresponding 
 
 ## Conclusion
 
-Through this document, you have learned how to use the Pixverse Tasks API to query all specific detail information of single or batch video tasks. We hope this document can help you better integrate and use this API. If you have any questions, please feel free to contact our technical support team.
+Through this document, you have learned how to use the Pixverse Tasks API to query the specific details of single or batch video tasks. We hope this document helps you better integrate and use the API. If you have any questions, please feel free to contact our technical support team.
