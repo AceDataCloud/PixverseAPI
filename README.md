@@ -17,11 +17,11 @@ To use the Pixverse Videos Generation API, you can first visit the [Pixverse Vid
 
 If you are not logged in or registered, you will be automatically redirected to the login page inviting you to register and log in. After logging in or registering, you will be automatically returned to the current page.
 
-Upon your first application, there will be a free quota provided, allowing you to use the API for free.
+Upon the first application, there will be a free quota provided, allowing you to use the API for free.
 
 ### Basic Usage
 
-You can generate videos based on prompts, for example, you can input `quiver`, as shown in the image:
+You can generate videos based on prompt words, for example, you can input `quiver`, as shown in the image:
 
 <p><img src="https://cdn.acedata.cloud/azz8d3.png" width="500" class="m-auto"></p>
 
@@ -33,7 +33,7 @@ Main request parameters:
 
 - `model`: The model for generating the video, default is `v3.5`.
 - `action`: The action for generating the video, default is `generate`, optional `extend`.
-- `prompt`: The prompt for generating the video (required).
+- `prompt`: The prompt word for generating the video (required).
 - `style`: Optional video style.
 - `motion`: Motion mode, default is normal.
 - `quality`: Video clarity, default is `540p`.
@@ -42,7 +42,7 @@ Main request parameters:
 - `aspect_ratio`: Aspect ratio, default is `16:9`.
 - `seed`: Optional, fixed random seed.
 - `template_id`: Optional, specify template effects.
-- `callback_url`: URL for callback results.
+- `callback_url`: The URL for callback results.
 
 You can click the "Try" button to directly test the API, wait for 1-2 minutes, and the result is as follows:
 
@@ -77,35 +77,35 @@ You can click the "Try" button to directly test the API, wait for 1-2 minutes, a
 }
 ```
 
-At this point, we have obtained the content of a video, including video ID, video link, video clarity, video duration, and other details.
+At this point, we have obtained the content of a video, including video ID, video link, video clarity, video duration, and other content.
 
 Field descriptions are as follows:
 
-- success: Indicates whether the generation was successful; if successful, it is `true`, otherwise it is `false`.
-- task_id: The ID of this generation task.
-- trace_id: The tracking ID of this generation task.
+- success: Whether the generation was successful, if successful then `true`, otherwise `false`
+- task_id: The ID of this generation task
+- trace_id: The tracking ID of this generation task
 - data: A list containing detailed information about the generated video.
-  - id: The unique ID of the generated video, which can be used for subsequent extensions.
-  - first_frame: The link to the first frame image of the video.
-  - last_frame: The link to the last frame image of the video.
-  - video_width: The width of the video result.
-  - video_height: The height of the video result.
-  - prompt: The prompt for this video generation task.
-  - model: The model used for this video generation task.
-  - video_url: The video link for this generation task.
-  - template_id: The ID of the template effects used in the video.
-  - template_name: The name of the template effects used in the video.
-  - asset_id: The ID of the character used in the video.
-  - asset_name: The name of the character used in the video.
-  - style: The style of this video generation task.
-  - aspect_ratio: The size of this video.
-  - extended: Indicates whether this video is an extended generation; 0 means it is not an extended generation, otherwise it is an extended generation.
+  - id: The unique ID of the generated video, which can be used for subsequent expansion generation
+  - first_frame: The link to the first frame image of the video
+  - last_frame: The link to the last frame image of the video
+  - video_width: The width of the video result
+  - video_height: The height of the video result
+  - prompt: The prompt word for this video generation task
+  - model: The model used for this video generation task
+  - video_url: The video link for this video generation task
+  - template_id: The ID of the template effects used in the video
+  - template_name: The name of the template effects used in the video
+  - asset_id: The ID of the character used in the video
+  - asset_name: The name of the character used in the video
+  - style: The style of this video generation task
+  - aspect_ratio: The size of this video
+  - extended: Whether this video is an extended generation, 0 means it is not an extended generation, otherwise it is an extended generation
 
 ### Custom First and Last Frame Video Generation
 
 If you want to customize the first and last frames for video generation, you can input the links to the first and last frame images:
 
-At this point, the `frame` field can accept content similar to the following:
+At this time, the `frame` field can accept content similar to the following:
 
 - First frame image
   <p><img src="https://cdn.acedata.cloud/c7zzmb.png" width="500" class="m-auto"></p>
@@ -114,15 +114,15 @@ At this point, the `frame` field can accept content similar to the following:
 
 Next, we need to customize the song generation based on lyrics, title, and style, specifying the following content:
 
-- action: The action for this video generation task, which can be either generate video `action` or extend video `extend`.
-- prompt: The prompt for this video generation task.
-- frame: An array of video links for the first and last frames.
+- action: The action for this video generation task, which can be either generate video `action` or extend video `extend`
+- prompt: The prompt word for this video generation task.
+- frame: An array of video links for the first and last frames generated.
 
-An example of the filled form is as follows:
+An example of the filled content is as follows:
 
 <p><img src="https://cdn.acedata.cloud/4ea6pa.png" width="500" class="m-auto"></p>
 
-After filling it out, the code is automatically generated as follows:
+After filling in, the generated code is as follows:
 
 <p><img src="https://cdn.acedata.cloud/yfzxxn.png" width="500" class="m-auto"></p>
 
@@ -144,7 +144,7 @@ Testing is allowed, and the generated effect is similar.
 
 ### Custom Video Template Effects Generation
 
-If you want to use specific video template effects to generate a video, you only need to add a template ID field `template_id` to specify the template effects. We provide the following template effects, as shown in the image below:
+If you want to use specific video template effects to generate videos, you only need to add a template ID field `template_id` to specify the template effects. We provide the following template effects, and the specific template effects are shown in the image below:
 
 ```json
 [
@@ -212,7 +212,7 @@ If you want to use specific video template effects to generate a video, you only
         "created_at": "2024-12-08T15:14:11Z",
         "updated_at": "2024-12-25T10:19:28Z",
         "display_prompt": "Change hairstyle for a better mood",
-        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Everything Can Be Curly Wool\",\"display_prompt\":\"Feeling down? Try a new hairstyle\"}}",
+        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Everything Can Be Curly Wool\",\"display_prompt\":\"Feeling down? Change your hairstyle and see\"}}",
         "example_list": "[{\"img_id\":113741803,\"img_url\":\"https://media.pixverse.ai/upload%2Fb2626bc2-050d-4ea6-a864-e2054c012df5.png\"},{\"img_id\":113750690,\"img_url\":\"https://media.pixverse.ai/upload%2Fddd29e75-beeb-461c-9388-3e14c2709e73.png\"}]",
         "qualities": [
             "360p",
@@ -230,7 +230,7 @@ If you want to use specific video template effects to generate a video, you only
         "created_at": "2024-12-25T12:29:05Z",
         "updated_at": "2025-01-06T05:32:33Z",
         "display_prompt": "Moon Prism Power, Make Up!",
-        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Become a Magical Girl Warrior\",\"display_prompt\":\"Moon Crystal Power, Transform!\"}}",
+        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Become a Sailor Senshi\",\"display_prompt\":\"Moon Crystal Power, Transform!\"}}",
         "example_list": "",
         "qualities": [
             "360p",
@@ -338,7 +338,7 @@ If you want to use specific video template effects to generate a video, you only
         "created_at": "2024-11-22T08:21:19Z",
         "updated_at": "2024-12-26T07:40:43Z",
         "display_prompt": "Transform into Harley Quinn, mastering allure and chaos",
-        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Harley Quinn Transformation\",\"display_prompt\":\"Transform into Harley Quinn, mastering allure and chaos\"}}",
+        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Harley Quinn Transformation\",\"display_prompt\":\"Transform into Harley Quinn, mastering allure and madness\"}}",
         "example_list": "[{\"img_id\":113741803,\"img_url\":\"https://media.pixverse.ai/upload%2Fb2626bc2-050d-4ea6-a864-e2054c012df5.png\"},{\"img_id\":113742000,\"img_url\":\"https://media.pixverse.ai/upload%2F19090035-612e-40ed-9c8d-a7aaf781d492.png\"},{\"img_id\":113742074,\"img_url\":\"https://media.pixverse.ai/upload%2F50ed9020-7b58-4dd9-aa39-ff06b9e0df12.png\"}]",
         "qualities": [
             "360p",
@@ -700,7 +700,7 @@ response = requests.post(url, json=payload, headers=headers)
 print(response.text)
 ```
 
-Clicking run, you can find that a result will be obtained, as follows:
+Clicking run, you can find that a result is obtained, as follows:
 
 ```json
 {
@@ -786,7 +786,7 @@ response = requests.post(url, json=payload, headers=headers)
 print(response.text)
 ```
 
-Clicking run, you can find that a result will be obtained, as follows:
+Clicking run, you can find that a result is obtained, as follows:
 ```
 ```json
 {
