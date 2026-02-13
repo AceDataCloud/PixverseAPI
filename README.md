@@ -1,6 +1,6 @@
 # Pixverse Video Generation API
 
-This service has implemented the integration of Pixverse AI, which can be used to generate videos and other content.
+Pixverse AI video generation service.
 
 API home page: [Ace Data Cloud - Pixverse Video Generation](https://platform.acedata.cloud/services/74e74695-ceff-49d1-ac84-cfa876225ae8)
 
