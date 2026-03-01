@@ -1,6 +1,6 @@
 # Pixverse Create Character ID API Integration Instructions
 
-Pixverse allows us to upload reference images to set up characters, and then generate videos based on this character ID. This document explains the integration method for the relevant API.
+Pixverse allows us to upload reference images to set characters, and then generate videos based on this character ID. This document explains the integration method for the related API.
 
 The API has only one input parameter, which is `images`, a publicly accessible CDN image URL. This document will introduce the following character image as an example:
 
@@ -32,4 +32,4 @@ The result is as follows:
 
 As we can see, the `asset_id` field in `data` is the character ID after uploading the reference image.
 
-With the character ID, we can then use the [Pixverse Videos Generation API](https://platform.acedata.cloud/documents/00f200b3-709d-4783-ac56-3d27cc70b73d) to generate custom videos. For example, if we pass `action` as `generate` and `asset_id` as the returned character ID, we can generate a new video based on the character ID.
+With the character ID, we can use the [Pixverse Videos Generation API](https://platform.acedata.cloud/documents/00f200b3-709d-4783-ac56-3d27cc70b73d) to generate custom videos. For example, if we pass `action` as `generate` and `asset_id` as the returned character ID, we can generate a new video based on the character ID.
