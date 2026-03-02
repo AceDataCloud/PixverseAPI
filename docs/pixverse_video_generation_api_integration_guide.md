@@ -10,7 +10,7 @@ To use the Pixverse Videos Generation API, you can first visit the [Pixverse Vid
 
 If you are not logged in or registered, you will be automatically redirected to the login page inviting you to register and log in. After logging in or registering, you will be automatically returned to the current page.
 
-Upon the first application, there will be a free quota provided, allowing you to use the API for free.
+Upon your first application, there will be a free quota provided, allowing you to use the API for free.
 
 ## Basic Usage
 
@@ -74,7 +74,7 @@ At this point, we have obtained the content of a video, including video ID, vide
 
 Field descriptions are as follows:
 
-- success: Indicates whether the generation was successful; if successful, it is `true`, otherwise it is `false`.
+- success: Indicates whether the generation was successful; if successful, it is `true`, otherwise `false`.
 - task_id: The ID of this generation task.
 - trace_id: The tracking ID of this generation task.
 - data: A list containing detailed information about the generated video.
@@ -92,7 +92,7 @@ Field descriptions are as follows:
   - asset_name: The name of the character used in the video.
   - style: The style of this video generation task.
   - aspect_ratio: The size of this video.
-  - extended: Indicates whether this video is an extended generation; 0 means it is not an extended generation, otherwise it is an extended generation.
+  - extended: Indicates whether this video is an extended generation; 0 means it is not extended, otherwise it is extended.
 
 ## Custom First and Last Frame Video Generation
 
@@ -115,7 +115,7 @@ An example of the filled content is as follows:
 
 <p><img src="https://cdn.acedata.cloud/4ea6pa.png" width="500" class="m-auto"></p>
 
-After filling in, the code is automatically generated as follows:
+After filling in, the generated code is as follows:
 
 <p><img src="https://cdn.acedata.cloud/yfzxxn.png" width="500" class="m-auto"></p>
 
@@ -137,7 +137,7 @@ Testing is allowed, and the generated effect is similar.
 
 ## Custom Video Template Effects Generation
 
-If you want to use specific video template effects to generate videos, you only need to add a template ID field `template_id` to specify the template effects. We provide the following template effects, and the specific template effects are shown in the image below:
+If you want to use specific video template effects to generate videos, you only need to add a template ID field `template_id` to specify the template effects. We provide the following template effects, as shown in the image below:
 
 ```json
 [
@@ -187,7 +187,7 @@ If you want to use specific video template effects to generate videos, you only 
         "created_at": "2024-10-24T03:55:29Z",
         "updated_at": "2025-01-06T05:32:53Z",
         "display_prompt": "The [OBJECT] comes to life and walks out of the [SCENE]",
-        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Lively\",\"display_prompt\":\"It is alive!\"}}",
+        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Vividly Alive\",\"display_prompt\":\"It's alive!\"}}",
         "example_list": "",
         "qualities": [
             "360p",
@@ -315,7 +315,7 @@ If you want to use specific video template effects to generate videos, you only 
         "created_at": "2024-10-31T12:08:42Z",
         "updated_at": "2024-12-25T10:19:28Z",
         "display_prompt": "Transform into a [BLACK] Venom",
-        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Venom Transformation!\",\"display_prompt\":\"Transform into [BLACK] Venom\"}}",
+        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Venom Transformation!\",\"display_prompt\":\"Transform into [Black] Venom\"}}",
         "example_list": "[{\"img_id\":113750602,\"img_url\":\"https://media.pixverse.ai/upload%2F920dc791-8c9f-4518-8761-82958a827190.png\"},{\"img_id\":113750690,\"img_url\":\"https://media.pixverse.ai/upload%2Fddd29e75-beeb-461c-9388-3e14c2709e73.png\"},{\"img_id\":113750791,\"img_url\":\"https://media.pixverse.ai/upload%2Ff2853009-8238-4e0f-93ec-cfc68fee28b7.png\"}]",
         "qualities": [
             "360p",
@@ -347,7 +347,7 @@ If you want to use specific video template effects to generate videos, you only 
         "created_at": "2024-11-22T08:22:15Z",
         "updated_at": "2024-12-26T07:40:24Z",
         "display_prompt": "Transform into a Crazy Cat Woman and slay",
-        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Crazy Cat Woman Transformation\",\"display_prompt\":\"Transform into a charming Cat Woman, captivating everyone!\"}}",
+        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Crazy Cat Woman Transformation\",\"display_prompt\":\"Transform into a charming Cat Woman, slaying the crowd!\"}}",
         "example_list": "[{\"img_id\":113742074,\"img_url\":\"https://media.pixverse.ai/upload%2F50ed9020-7b58-4dd9-aa39-ff06b9e0df12.png\"},{\"img_id\":113750690,\"img_url\":\"https://media.pixverse.ai/upload%2Fddd29e75-beeb-461c-9388-3e14c2709e73.png\"},{\"img_id\":113750791,\"img_url\":\"https://media.pixverse.ai/upload%2Ff2853009-8238-4e0f-93ec-cfc68fee28b7.png\"}]",
         "qualities": [
             "360p",
@@ -728,9 +728,9 @@ Clicking run, you can find that a result is obtained, as follows:
 
 It can be seen that the result content is the same as the video template effect, which also realizes the function of generating videos using template effects.
 
-## Continue to expand video generation function
+## Continue to Expand Video Generation Functionality
 
-If you want to expand the generated Pixverse video, you can set the parameter `action` to `extend`, and input the ID of the video to be expanded. The video ID can be obtained based on basic usage, as shown in the image below:
+If you want to extend the generated Pixverse video, you can set the parameter `action` to `extend`, and input the ID of the video to be extended. The video ID can be obtained based on basic usage, as shown in the image below:
 
 <p><img src="https://cdn.acedata.cloud/kwcdyg.png" width="500" class="m-auto"></p>
 
@@ -740,9 +740,9 @@ At this time, you can see that the video ID is:
 "id": 317989274748288
 ```
 
-> Note that the `id` here is the ID of the generated video. If you do not know how to generate a video, you can refer to the basic usage above to generate a video.
+> Note that the `id` here is the ID of the generated video. If you do not know how to generate a video, you can refer to the basic usage mentioned above to generate a video.
 
-Next, we must fill in the lyrics and style to customize the generated song, and we can specify the following content:
+Next, we must fill in the lyrics and style to customize the generated song, and specify the following content:
 
 - action: The behavior of this video generation task, generally there are normal generation `generate` and extended video `extend`.
 - prompt: The prompt for this video generation.
@@ -865,7 +865,7 @@ The generated result is similar to the above text, completing the process of gen
 
 | Template ID       | Effect               |
 | ----------------- | -------------------- |
-| 321958627120000   | AI object release     |
+| 321958627120000   | AI object generation  |
 | 324641581197696   | Let's sway together!  |
 | 324641385496960   | 360° rotating microwave |
 | 325367418993728   | Cherry blossom utopia  |
@@ -875,23 +875,23 @@ The generated result is similar to the above text, completing the process of gen
 | 308621408717184   | Become a muscle man     |
 | 313358700761536   | Everything can be Transformers |
 | 316645675647872   | Cigar boss             |
-| 321956810449792   | Oscar best actor       |
+| 321956810449792   | Oscar-winning actor     |
 | 323578865822784   | Gender converter        |
 | 303624424723200   | Love hug               |
 | 313555098280384   | Change into a bikini    |
-| 313649491716544   | Tiger hug              |
-| 313649622731200   | Angel wings            |
+| 313649491716544   | Tiger's hug            |
+| 313649622731200   | Angel's wings          |
 | 316826014376384   | Hug Jesus              |
 | 315446315336768   | Love kiss              |
 | 322852853601344   | Everything can walk the red carpet |
 | 304826314164992   | Hulk transformation     |
-| 315447659476032   | Black Wukong engine     |
+| 315447659476032   | Black Goku engine      |
 | 313359138372032   | Become a Sailor Moon    |
-| 308552687706496   | Hair king              |
+| 308552687706496   | Hair volume king       |
 | 307489548427968   | Crazy Catwoman transformation |
 | 304826126435072   | Joker reborn           |
 | 304826374632192   | Batman returns         |
-| 304358279051648   | Venom! (Colorblind box version) |
+| 304358279051648   | Venom! (Colorblind version) |
 | 304826054394624   | Iron Man transformation |
 | 317013509917440   | New Year battle skirt   |
 | 313358844899776   | Be your own wealth god  |
@@ -899,14 +899,14 @@ The generated result is similar to the above text, completing the process of gen
 | 307489434436288   | Harley Quinn transformation |
 | 311521768592256   | Christmas gift blind box |
 | 311521879229312   | Where is Santa hiding?  |
-| 312314911869312   | Christmas battle robe    |
+| 312314911869312   | Christmas battle robe   |
 | 306059795500352   | Summon Venom brothers   |
 | 303788802773760   | Sweep everything        |
-| 302325299702848   | LEGO explosion          |
-| 302325299682368   | Monster invasion        |
-| 302325299661888   | Wear a magic hat       |
+| 302325299702848   | LEGO explosion         |
+| 302325299682368   | Monster invasion       |
+| 302325299661888   | Wear a magic hat      |
 | 302325299651648   | Oh no, I turned into a zombie |
-| 302325299672128   | Zombie hand sighting    |
+| 302325299672128   | Zombie hand sighting   |
 
 ### Styles:
 
@@ -937,7 +937,7 @@ The generated result is similar to the above text, completing the process of gen
 | fix_bg             | Fixed shot   |
 | camera_rotation     | Camera rotation |
 | robo_arm           | Robotic arm movement |
-| whip_pan           | Quick pan    |
+| whip_pan           | Quick whip pan |
 
 ## Asynchronous Callback
 
