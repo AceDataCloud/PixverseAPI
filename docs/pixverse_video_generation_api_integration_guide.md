@@ -78,7 +78,7 @@ Field descriptions are as follows:
 - task_id: The ID of this generation task.
 - trace_id: The tracking ID of this generation task.
 - data: A list containing detailed information about the generated video.
-  - id: The unique ID of the generated video, which can be used for subsequent extension generation.
+  - id: The unique ID of the generated video, which can be used for subsequent extensions.
   - first_frame: The link to the first frame image of the video.
   - last_frame: The link to the last frame image of the video.
   - video_width: The width of the video result.
@@ -115,7 +115,7 @@ An example of the filled content is as follows:
 
 <p><img src="https://cdn.acedata.cloud/4ea6pa.png" width="500" class="m-auto"></p>
 
-After filling in, the generated code is as follows:
+After filling in, the code is automatically generated as follows:
 
 <p><img src="https://cdn.acedata.cloud/yfzxxn.png" width="500" class="m-auto"></p>
 
@@ -137,7 +137,7 @@ Testing is allowed, and the generated effect is similar.
 
 ## Custom Video Template Effects Generation
 
-If you want to use specific video template effects to generate videos, you only need to add a template ID field `template_id` to specify the template effects. We provide the following template effects, as shown in the image below:
+If you want to use specific video template effects to generate videos, you only need to add a template ID field `template_id` to specify the template effects. We provide the following template effects, and the specific template effects are shown in the image below:
 
 ```json
 [
@@ -187,7 +187,7 @@ If you want to use specific video template effects to generate videos, you only 
         "created_at": "2024-10-24T03:55:29Z",
         "updated_at": "2025-01-06T05:32:53Z",
         "display_prompt": "The [OBJECT] comes to life and walks out of the [SCENE]",
-        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Vividly Alive\",\"display_prompt\":\"It is alive!\"}}",
+        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Lively\",\"display_prompt\":\"It is alive!\"}}",
         "example_list": "",
         "qualities": [
             "360p",
@@ -223,7 +223,7 @@ If you want to use specific video template effects to generate videos, you only 
         "created_at": "2024-12-25T12:29:05Z",
         "updated_at": "2025-01-06T05:32:33Z",
         "display_prompt": "Moon Prism Power, Make Up!",
-        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Become a Sailor Soldier\",\"display_prompt\":\"Moon Crystal Power, Transform!\"}}",
+        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Become a Sailor Senshi\",\"display_prompt\":\"Moon Crystal Power, Transform!\"}}",
         "example_list": "",
         "qualities": [
             "360p",
@@ -331,7 +331,7 @@ If you want to use specific video template effects to generate videos, you only 
         "created_at": "2024-11-22T08:21:19Z",
         "updated_at": "2024-12-26T07:40:43Z",
         "display_prompt": "Transform into Harley Quinn, mastering allure and chaos",
-        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Harley Quinn Transformation\",\"display_prompt\":\"Transform into Harley Quinn, mastering allure and madness\"}}",
+        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Harley Quinn Transformation\",\"display_prompt\":\"Transform into Harley Quinn, mastering allure and chaos\"}}",
         "example_list": "[{\"img_id\":113741803,\"img_url\":\"https://media.pixverse.ai/upload%2Fb2626bc2-050d-4ea6-a864-e2054c012df5.png\"},{\"img_id\":113742000,\"img_url\":\"https://media.pixverse.ai/upload%2F19090035-612e-40ed-9c8d-a7aaf781d492.png\"},{\"img_id\":113742074,\"img_url\":\"https://media.pixverse.ai/upload%2F50ed9020-7b58-4dd9-aa39-ff06b9e0df12.png\"}]",
         "qualities": [
             "360p",
@@ -746,7 +746,7 @@ Next, we must fill in the lyrics and style to customize the generated song, and 
 
 - action: The behavior of this video generation task, generally there are normal generation `generate` and extended video `extend`.
 - prompt: The prompt for this video generation.
-- video_id: The reference video ID for this expansion video task.
+- video_id: The reference video ID for this extended video task.
 
 The sample input is as follows:
 
@@ -865,7 +865,7 @@ The generated result is similar to the above text, completing the process of gen
 
 | Template ID       | Effect               |
 | ----------------- | -------------------- |
-| 321958627120000   | AI object generation  |
+| 321958627120000   | AI object release     |
 | 324641581197696   | Let's sway together!  |
 | 324641385496960   | 360° rotating microwave |
 | 325367418993728   | Cherry blossom utopia  |
@@ -875,19 +875,19 @@ The generated result is similar to the above text, completing the process of gen
 | 308621408717184   | Become a muscle man     |
 | 313358700761536   | Everything can be Transformers |
 | 316645675647872   | Cigar boss             |
-| 321956810449792   | Oscar-winning actor     |
+| 321956810449792   | Oscar best actor       |
 | 323578865822784   | Gender converter        |
 | 303624424723200   | Love hug               |
 | 313555098280384   | Change into a bikini    |
-| 313649491716544   | Tiger's hug            |
-| 313649622731200   | Angel's wings          |
+| 313649491716544   | Tiger hug              |
+| 313649622731200   | Angel wings            |
 | 316826014376384   | Hug Jesus              |
 | 315446315336768   | Love kiss              |
 | 322852853601344   | Everything can walk the red carpet |
 | 304826314164992   | Hulk transformation     |
 | 315447659476032   | Black Wukong engine     |
 | 313359138372032   | Become a Sailor Moon    |
-| 308552687706496   | Hair volume king       |
+| 308552687706496   | Hair king              |
 | 307489548427968   | Crazy Catwoman transformation |
 | 304826126435072   | Joker reborn           |
 | 304826374632192   | Batman returns         |
@@ -899,14 +899,14 @@ The generated result is similar to the above text, completing the process of gen
 | 307489434436288   | Harley Quinn transformation |
 | 311521768592256   | Christmas gift blind box |
 | 311521879229312   | Where is Santa hiding?  |
-| 312314911869312   | Christmas battle robe   |
+| 312314911869312   | Christmas battle robe    |
 | 306059795500352   | Summon Venom brothers   |
 | 303788802773760   | Sweep everything        |
-| 302325299702848   | LEGO explosion         |
-| 302325299682368   | Monster invasion       |
-| 302325299661888   | Wear a magic hat      |
+| 302325299702848   | LEGO explosion          |
+| 302325299682368   | Monster invasion        |
+| 302325299661888   | Wear a magic hat       |
 | 302325299651648   | Oh no, I turned into a zombie |
-| 302325299672128   | Zombie hand sighting   |
+| 302325299672128   | Zombie hand sighting    |
 
 ### Styles:
 
@@ -945,7 +945,7 @@ Due to the relatively long time it takes for Pixverse to generate music, approxi
 
 The overall process is: when the client initiates a request, an additional `callback_url` field is specified. After the client initiates the API request, the API will immediately return a result containing a `task_id` field, representing the current task ID. When the task is completed, the generated music result will be sent to the client-specified `callback_url` in the form of a POST JSON, which also includes the `task_id` field, allowing the task result to be associated by ID.
 
-Let's understand how to operate specifically through an example.
+Let’s understand how to operate specifically through an example.
 
 First, the Webhook callback is a service that can receive HTTP requests, and developers should replace it with the URL of their own HTTP server. For demonstration purposes, we use a public Webhook sample site https://webhook.site/, where you can open the site to get a Webhook URL, as shown in the image:
 
