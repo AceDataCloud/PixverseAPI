@@ -2,7 +2,7 @@
 
 Pixverse allows us to upload reference images to set characters, and then generate videos based on this character ID. This document explains the integration method for the relevant API.
 
-This API has only one input parameter, which is `images`, a publicly accessible CDN image URL. This document will introduce the following character image as an example:
+The API has only one input parameter, which is `images`, a publicly accessible CDN image URL. This document will introduce the following character image as an example:
 
 <p><img src="https://cdn.acedata.cloud/8bai0n.png" width="500" class="m-auto"></p>
 
