@@ -144,11 +144,11 @@ The returned result contains multiple fields, with the request field being the r
 
 ## Batch Query Operation
 
-This is for querying the details of video tasks for multiple task IDs, and unlike the above, the action needs to be selected as retrieve_batch.
+This is for querying the details of multiple task IDs, and unlike the above, the action needs to be selected as retrieve_batch.
 
 **Request Body** includes:
 
-- `ids`: The array of uploaded task IDs.
+- `ids`: An array of uploaded task IDs.
 - `action`: The operation method for the task.
 
 Set as shown in the image below:
