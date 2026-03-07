@@ -81,7 +81,7 @@ At this point, we have obtained the content of a video, including video ID, vide
 
 Field descriptions are as follows:
 
-- success: Indicates whether the generation was successful; if successful, it is `true`, otherwise `false`.
+- success: Indicates whether the generation was successful; if successful, it is `true`, otherwise it is `false`.
 - task_id: The ID of this generation task.
 - trace_id: The tracking ID of this generation task.
 - data: A list containing detailed information about the generated video.
@@ -158,7 +158,7 @@ If you want to use specific video template effects to generate videos, you only 
         "created_at": "2024-11-28T17:53:21Z",
         "updated_at": "2024-12-25T10:19:28Z",
         "display_prompt": "Show off your strong muscles and have everyone hooked.",
-        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Become a Muscle Man\",\"display_prompt\":\"Experience the joy of being a muscle man\"}}",
+        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Become a Muscle Man\",\"display_prompt\":\"Experience the joy of being muscular\"}}",
         "example_list": "[{\"img_id\":113750602,\"img_url\":\"https://media.pixverse.ai/upload%2F920dc791-8c9f-4518-8761-82958a827190.png\"},{\"img_id\":113750690,\"img_url\":\"https://media.pixverse.ai/upload%2Fddd29e75-beeb-461c-9388-3e14c2709e73.png\"},{\"img_id\":113750791,\"img_url\":\"https://media.pixverse.ai/upload%2Ff2853009-8238-4e0f-93ec-cfc68fee28b7.png\"}]",
         "qualities": [
             "360p",
@@ -194,7 +194,7 @@ If you want to use specific video template effects to generate videos, you only 
         "created_at": "2024-10-24T03:55:29Z",
         "updated_at": "2025-01-06T05:32:53Z",
         "display_prompt": "The [OBJECT] comes to life and walks out of the [SCENE]",
-        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Lively\",\"display_prompt\":\"It’s alive!\"}}",
+        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Lively\",\"display_prompt\":\"It's alive!\"}}",
         "example_list": "",
         "qualities": [
             "360p",
@@ -212,7 +212,7 @@ If you want to use specific video template effects to generate videos, you only 
         "created_at": "2024-12-08T15:14:11Z",
         "updated_at": "2024-12-25T10:19:28Z",
         "display_prompt": "Change hairstyle for a better mood",
-        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Everything Can Be Curled\",\"display_prompt\":\"Feeling down? Change your hairstyle\"}}",
+        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Everything Can Be Curly Wool\",\"display_prompt\":\"Feeling down? Try a new hairstyle\"}}",
         "example_list": "[{\"img_id\":113741803,\"img_url\":\"https://media.pixverse.ai/upload%2Fb2626bc2-050d-4ea6-a864-e2054c012df5.png\"},{\"img_id\":113750690,\"img_url\":\"https://media.pixverse.ai/upload%2Fddd29e75-beeb-461c-9388-3e14c2709e73.png\"}]",
         "qualities": [
             "360p",
@@ -230,7 +230,7 @@ If you want to use specific video template effects to generate videos, you only 
         "created_at": "2024-12-25T12:29:05Z",
         "updated_at": "2025-01-06T05:32:33Z",
         "display_prompt": "Moon Prism Power, Make Up!",
-        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Become a Sailor Soldier\",\"display_prompt\":\"Moon Crystal Power, Transform!\"}}",
+        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Become a Magical Girl\",\"display_prompt\":\"Moon Crystal Power, Transform!\"}}",
         "example_list": "",
         "qualities": [
             "360p",
@@ -322,7 +322,7 @@ If you want to use specific video template effects to generate videos, you only 
         "created_at": "2024-10-31T12:08:42Z",
         "updated_at": "2024-12-25T10:19:28Z",
         "display_prompt": "Transform into a [BLACK] Venom",
-        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Venom Transformation!\",\"display_prompt\":\"Transform into [BLACK] Venom\"}}",
+        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Venom Transformation!\",\"display_prompt\":\"Transform into [Black] Venom\"}}",
         "example_list": "[{\"img_id\":113750602,\"img_url\":\"https://media.pixverse.ai/upload%2F920dc791-8c9f-4518-8761-82958a827190.png\"},{\"img_id\":113750690,\"img_url\":\"https://media.pixverse.ai/upload%2Fddd29e75-beeb-461c-9388-3e14c2709e73.png\"},{\"img_id\":113750791,\"img_url\":\"https://media.pixverse.ai/upload%2Ff2853009-8238-4e0f-93ec-cfc68fee28b7.png\"}]",
         "qualities": [
             "360p",
@@ -354,7 +354,7 @@ If you want to use specific video template effects to generate videos, you only 
         "created_at": "2024-11-22T08:22:15Z",
         "updated_at": "2024-12-26T07:40:24Z",
         "display_prompt": "Transform into a Crazy Cat Woman and slay",
-        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Crazy Cat Woman Transformation\",\"display_prompt\":\"Transform into a charming Cat Woman, slaying the crowd!\"}}",
+        "i18n_json": "{\"zh-CN\":{\"display_name\":\"Crazy Cat Woman Transformation\",\"display_prompt\":\"Transform into a charming Cat Woman, captivating everyone!\"}}",
         "example_list": "[{\"img_id\":113742074,\"img_url\":\"https://media.pixverse.ai/upload%2F50ed9020-7b58-4dd9-aa39-ff06b9e0df12.png\"},{\"img_id\":113750690,\"img_url\":\"https://media.pixverse.ai/upload%2Fddd29e75-beeb-461c-9388-3e14c2709e73.png\"},{\"img_id\":113750791,\"img_url\":\"https://media.pixverse.ai/upload%2Ff2853009-8238-4e0f-93ec-cfc68fee28b7.png\"}]",
         "qualities": [
             "360p",
@@ -668,7 +668,7 @@ If you want to use specific video template effects to generate videos, you only 
 ]
 ```
 
-We can choose a `template_id` from above to generate a video. We take `302325299651648` as an example to generate a video, and the other parameters are similar to basic usage. The specific parameters are shown in the image below:
+We can choose a `template_id` from above to generate a video. We take `302325299651648` as an example to generate a video, and other parameters are similar to basic usage. The specific parameters are shown in the image below:
 
 <p><img src="https://cdn.acedata.cloud/pwbyma.png" width="500" class="m-auto"></p>
 
@@ -735,9 +735,9 @@ Clicking run, you can find that a result is obtained, as follows:
 
 It can be seen that the result content is the same as the video template effect, which also realizes the function of generating videos using template effects.
 
-### Continue to Expand Video Generation Functionality
+### Continue to expand video generation function
 
-If you want to extend the already generated Pixverse video, you can set the parameter `action` to `extend`, and input the ID of the video to be extended. The video ID can be obtained based on basic usage, as shown in the image below:
+If you want to expand the generated Pixverse video, you can set the parameter `action` to `extend`, and input the ID of the video to be expanded. The video ID can be obtained based on basic usage, as shown in the image below:
 
 <p><img src="https://cdn.acedata.cloud/kwcdyg.png" width="500" class="m-auto"></p>
 
@@ -751,11 +751,11 @@ At this time, you can see that the video ID is:
 
 Next, we must fill in the lyrics and style to customize the generated song, and we can specify the following content:
 
-- action: The action of this video generation task, generally there are normal generation `generate` and extended video `extend`.
+- action: The behavior of this video generation task, generally there are normal generation `generate` and extended video `extend`.
 - prompt: The prompt for this video generation.
-- video_id: The reference video ID for this extension video task.
+- video_id: The reference video ID for this expansion video task.
 
-The sample input is as follows:
+An example of filling in is as follows:
 
 <p><img src="https://cdn.acedata.cloud/hio4x5.png" width="500" class="m-auto"></p>
 
