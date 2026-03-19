@@ -2,14 +2,26 @@
 
 Pixverse AI video generation service.
 
-API home page: [Ace Data Cloud - Pixverse Video Generation](https://platform.acedata.cloud/services/74e74695-ceff-49d1-ac84-cfa876225ae8)
+![Platform](https://img.shields.io/badge/platform-Ace%20Data%20Cloud-0f766e?style=flat-square) ![API](https://img.shields.io/badge/type-AI%20API-2563eb?style=flat-square) ![Docs](https://img.shields.io/badge/docs-online-16a34a?style=flat-square)
 
-## Get Started
+![Pixverse Video Generation](https://cdn.acedata.cloud/pdqnrf.png)
 
+API home page: [Ace Data Cloud - Pixverse Video Generation](https://platform.acedata.cloud/service/pixverse)
+
+Keywords: pixverse-api, ai-video, video-generation, text-to-video, rest-api, ai-api, aivideo, AI API, REST API, Developer API, Ace Data Cloud
+
+## Why Use Pixverse Video Generation on Ace Data Cloud
+
+- Unified developer platform with one API key, billing system, and usage tracking
+- Production-ready AI API endpoints served from [https://api.acedata.cloud](https://api.acedata.cloud)
+- English integration guides, API references, and service documentation
+- Global-ready workflow for developers building chat, image, video, music, and search products
+
+## Overview
 
 This document will introduce the Pixverse Videos Generation API integration instructions, which can generate official Pixverse videos by inputting custom parameters.
 
-### Application and Usage
+## Application and Usage
 
 To use the Pixverse Videos Generation API, you can first visit the [Pixverse Videos Generation API](https://platform.acedata.cloud/documents/00f200b3-709d-4783-ac56-3d27cc70b73d) page and click the "Acquire" button to obtain the credentials needed for the request:
 
@@ -19,7 +31,7 @@ If you are not logged in or registered, you will be automatically redirected to 
 
 Upon your first application, there will be a free quota provided, allowing you to use the API for free.
 
-### Basic Usage
+## Basic Usage
 
 You can generate videos based on prompts, for example, you can input `quiver`, as shown in the image:
 
@@ -101,7 +113,7 @@ Field descriptions are as follows:
   - aspect_ratio: The size of this video.
   - extended: Indicates whether this video is an extended generation; 0 means it is not an extended generation, otherwise it is an extended generation.
 
-### Custom First and Last Frame Video Generation
+## Custom First and Last Frame Video Generation
 
 If you want to customize the first and last frames for video generation, you can input the links to the first and last frame images:
 
@@ -142,7 +154,7 @@ curl -X POST 'https://api.acedata.cloud/pixverse/videos' \
 
 Testing is allowed, and the generated effect is similar.
 
-### Custom Video Template Effects Generation
+## Custom Video Template Effects Generation
 
 If you want to use specific video template effects to generate a video, you only need to add a template ID field `template_id` to specify the template effects. We provide the following template effects, and the specific template effects are shown in the image below:
 
@@ -735,105 +747,37 @@ Clicking run, you can find that a result is obtained, as follows:
 
 It can be seen that the result content is the same as the video template effect, which also realizes the function of generating videos using template effects.
 
-### Continue to expand video generation function
 
-If you want to expand the generated Pixverse video, you can set the parameter `action` to `extend`, and input the ID of the video to be expanded. The video ID can be obtained based on basic usage, as shown in the image below:
+## Quick Start
 
-<p><img src="https://cdn.acedata.cloud/kwcdyg.png" width="500" class="m-auto"></p>
+- Base URL: [https://api.acedata.cloud](https://api.acedata.cloud)
+- Service page: [Pixverse Video Generation on Ace Data Cloud](https://platform.acedata.cloud/service/pixverse)
+- Docs: [Developer documentation](https://docs.acedata.cloud)
 
-At this time, you can see that the video ID is:
-
-```
-"id": 317989274748288
-```
-
-> Note that the `id` here is the ID of the generated video. If you do not know how to generate a video, you can refer to the basic usage above to generate a video.
-
-Next, we must fill in the lyrics and style to customize the generated song, and we can specify the following content:
-
-- action: The behavior of this video generation task, generally there are normal generation `generate` and extended video `extend`.
-- prompt: The prompt for this video generation.
-- video_id: The reference video ID for this expansion video task.
-
-The sample input is as follows:
-
-<p><img src="https://cdn.acedata.cloud/hio4x5.png" width="500" class="m-auto"></p>
-
-After filling in, the automatically generated code is as follows:
-
-<p><img src="https://cdn.acedata.cloud/ts5xif.png" width="500" class="m-auto"></p>
-
-The corresponding Python code:
-
-```python
-import requests
-
-url = "https://api.acedata.cloud/pixverse/videos"
-
-headers = {
-    "accept": "application/json",
-    "authorization": "Bearer {token}",
-    "content-type": "application/json"
-}
-
-payload = {
-    "action": "extend",
-    "prompt": "A group of people began to dance",
-    "video_id": 317989274748288
-}
-
-response = requests.post(url, json=payload, headers=headers)
-print(response.text)
+```bash
+curl --request POST "https://api.acedata.cloud/pixverse/videos" \
+  --header "Authorization: Bearer YOUR_API_KEY" \
+  --header "Content-Type: application/json" \
+  --data '{}'
 ```
 
-Clicking run, you can find that a result is obtained, as follows:
-```
-```json
-{
-  "success": true,
-  "task_id": "38b6d70d-eea2-40da-9f8b-945df93e831b",
-  "trace_id": "b105bbb6-faf1-4d86-9c10-4b8a8e638d05",
-  "data": [
-    {
-      "id": 318162960027008,
-      "first_frame": "",
-      "video_width": 0,
-      "video_height": 0,
-      "prompt": "A group of people began to dance",
-      "model": "v3.5",
-      "quality": "360p",
-      "motion": "normal",
-      "video_url": "https://media.pixverse.ai/pixverse%2Fmp4%2Fmedia%2Fweb%2F2368ad8b-81dc-4a2f-9b6c-e0ac205351f9_seed0.mp4",
-      "template_id": 0,
-      "template_name": "",
-      "style": "",
-      "aspect_ratio": "16:9",
-      "duration": 5,
-      "extended": 1,
-      "last_frame": "",
-      "seed": 0,
-      "asset_id": 0,
-      "asset_name": ""
-    }
-  ]
-}
-```
+## APIs and Guides
 
-It can be seen that the result content is consistent with the above text, which also realizes the function of video extension generation.
-
-
-## More
-
-For more info, please check below APIs and integration documents.
+Explore the supported endpoints and integration guides for Pixverse Video Generation.
 
 | API | Path | Integration Guidance |
 | ---- | ---- | ------------ |
-| [Pixverse Video Generation API Integration Guide](http://platform.acedata.cloud/documents/00f200b3-709d-4783-ac56-3d27cc70b73d) | `/pixverse/videos` | [Pixverse Video Generation API Integration Guide](http://platform.acedata.cloud/documents/a5c7bf5a-18bf-4943-becc-cfe1356f90ec) |
-| [Pixverse Tasks API](http://platform.acedata.cloud/documents/94d98778-9a98-4e27-bd68-e018a34fae11) | `/pixverse/tasks` | [Pixverse Tasks API Integration Guide](http://platform.acedata.cloud/documents/0ee1c397-2d5f-4a70-ae0f-4a49195dfe20) |
-| [Pixverse Character API](http://platform.acedata.cloud/documents/32f3dd45-7000-49c2-a38e-285bd02ae334) | `/pixverse/character` | [Pixverse Character API Integration Guide](http://platform.acedata.cloud/documents/423a57f0-eed7-4539-8815-37411b9b43ae) |
+| [Pixverse Video Generation API Integration Guide](https://platform.acedata.cloud/documents/00f200b3-709d-4783-ac56-3d27cc70b73d) | `/pixverse/videos` | [Pixverse Video Generation API Integration Guide](https://platform.acedata.cloud/documents/a5c7bf5a-18bf-4943-becc-cfe1356f90ec) |
+| [Pixverse Tasks API](https://platform.acedata.cloud/documents/94d98778-9a98-4e27-bd68-e018a34fae11) | `/pixverse/tasks` | [Pixverse Tasks API Integration Guide](https://platform.acedata.cloud/documents/0ee1c397-2d5f-4a70-ae0f-4a49195dfe20) |
+| [Pixverse Character API](https://platform.acedata.cloud/documents/32f3dd45-7000-49c2-a38e-285bd02ae334) | `/pixverse/character` | [Pixverse Character API Integration Guide](https://platform.acedata.cloud/documents/423a57f0-eed7-4539-8815-37411b9b43ae) |
 
-Base URL: [https://api.acedata.cloud](https://api.acedata.cloud)
+## Related Resources
+
+- [Ace Data Cloud Developer Platform](https://platform.acedata.cloud)
+- [Ace Data Cloud Docs](https://docs.acedata.cloud)
+- [Status Page](https://status.acedata.cloud)
+- [Ace Data Cloud GitHub Organization](https://github.com/AceDataCloud)
 
 ## Support
 
-If you meet any issue, check our from [support info](https://platform.acedata.cloud/support).
+If you meet any issue, please check [support info](https://platform.acedata.cloud/support) or browse the latest documentation on [docs.acedata.cloud](https://docs.acedata.cloud).
