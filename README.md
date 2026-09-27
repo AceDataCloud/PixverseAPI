@@ -23,13 +23,15 @@ This document will introduce the Pixverse Videos Generation API integration inst
 
 ## Application and Usage
 
-To use the Pixverse Videos Generation API, you can first visit the [Pixverse Videos Generation API](https://platform.acedata.cloud/documents/00f200b3-709d-4783-ac56-3d27cc70b73d) page and click the "Acquire" button to obtain the credentials needed for the request:
+To use Pixverse Videos Generation API, first open the [Ace Data Cloud Console](https://platform.acedata.cloud/console/applications) and copy your API Token.
 
-![](https://cdn.acedata.cloud/nyq0xz.png)
+![](https://cdn.acedata.cloud/dvc3cg.jpg)
 
-If you are not logged in or registered, you will be automatically redirected to the login page inviting you to register and log in. After logging in or registering, you will be automatically returned to the current page.
+If you are not logged in, you will be redirected to sign in and brought back to this page automatically.
 
-Upon your first application, there will be a free quota provided, allowing you to use the API for free.
+**A single API Token works across every service on the platform — no need to subscribe per service.** New accounts receive free starter credit; when it runs low you can top up your shared balance in the [console](https://platform.acedata.cloud/console/coin).
+
+> 📘 Full documentation: [Pixverse Videos Generation API →](https://platform.acedata.cloud/documents/pixverse)
 
 ## Basic Usage
 
@@ -768,8 +770,8 @@ Explore the supported endpoints and integration guides for Pixverse Video Genera
 | API | Path | Integration Guidance |
 | ---- | ---- | ------------ |
 | [Pixverse Video Generation API Integration Guide](https://platform.acedata.cloud/documents/00f200b3-709d-4783-ac56-3d27cc70b73d) | `/pixverse/videos` | [Pixverse Video Generation API Integration Guide](https://platform.acedata.cloud/documents/a5c7bf5a-18bf-4943-becc-cfe1356f90ec) |
-| [Pixverse Tasks API](https://platform.acedata.cloud/documents/94d98778-9a98-4e27-bd68-e018a34fae11) | `/pixverse/tasks` | [Pixverse Tasks API Integration Guide](https://platform.acedata.cloud/documents/0ee1c397-2d5f-4a70-ae0f-4a49195dfe20) |
-| [Pixverse Character API](https://platform.acedata.cloud/documents/32f3dd45-7000-49c2-a38e-285bd02ae334) | `/pixverse/character` | [Pixverse Character API Integration Guide](https://platform.acedata.cloud/documents/423a57f0-eed7-4539-8815-37411b9b43ae) |
+| [Pixverse Character API](https://platform.acedata.cloud/documents/32f3dd45-7000-49c2-a38e-285bd02ae334) | `/pixverse/character` | [](https://platform.acedata.cloud/documents/) |
+| [Pixverse Tasks API](https://platform.acedata.cloud/documents/94d98778-9a98-4e27-bd68-e018a34fae11) | `/pixverse/tasks` | [](https://platform.acedata.cloud/documents/) |
 
 ## Related Resources
 

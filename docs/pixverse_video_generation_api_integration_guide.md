@@ -4,13 +4,15 @@ This document will introduce the Pixverse Videos Generation API integration inst
 
 ## Application and Usage
 
-To use the Pixverse Videos Generation API, you can first visit the [Pixverse Videos Generation API](https://platform.acedata.cloud/documents/00f200b3-709d-4783-ac56-3d27cc70b73d) page and click the "Acquire" button to obtain the credentials needed for the request:
+To use Pixverse Videos Generation API, first open the [Ace Data Cloud Console](https://platform.acedata.cloud/console/applications) and copy your API Token.
 
-![](https://cdn.acedata.cloud/nyq0xz.png)
+![](https://cdn.acedata.cloud/dvc3cg.jpg)
 
-If you are not logged in or registered, you will be automatically redirected to the login page inviting you to register and log in. After logging in or registering, you will be automatically returned to the current page.
+If you are not logged in, you will be redirected to sign in and brought back to this page automatically.
 
-Upon your first application, there will be a free quota provided, allowing you to use the API for free.
+**A single API Token works across every service on the platform — no need to subscribe per service.** New accounts receive free starter credit; when it runs low you can top up your shared balance in the [console](https://platform.acedata.cloud/console/coin).
+
+> 📘 Full documentation: [Pixverse Videos Generation API →](https://platform.acedata.cloud/documents/pixverse)
 
 ## Basic Usage
 
@@ -816,7 +818,7 @@ It can be seen that the result content is consistent with the above text, which 
 
 ## Custom Character Video Generation
 
-If you want to generate a video based on a character from an image, you need to additionally input the character ID field `asset_id`, which can be obtained using the [Pixverse Character API](https://platform.acedata.cloud/documents/32f3dd45-7000-49c2-a38e-285bd02ae334). The specific result is shown in the image below:
+If you want to generate a video based on a character from an image, you need to additionally input the character ID field `asset_id`, which can be obtained using the [Pixverse Character API](https://platform.acedata.cloud/documents/pixverse-character). The specific result is shown in the image below:
 
 <p><img src="https://cdn.acedata.cloud/xj2l9e.png" width="500" class="m-auto"></p>
 
