@@ -6,7 +6,7 @@ Pixverse AI video generation service.
 
 ![Pixverse Video Generation](https://cdn.acedata.cloud/pdqnrf.png)
 
-API home page: [Ace Data Cloud - Pixverse Video Generation](https://platform.acedata.cloud/service/pixverse)
+API home page: [Ace Data Cloud - Pixverse Video Generation](https://platform.acedata.cloud/service/pixverse?utm_source=github)
 
 Keywords: pixverse-api, ai-video, video-generation, text-to-video, rest-api, ai-api, aivideo, AI API, REST API, Developer API, Ace Data Cloud
 
@@ -23,15 +23,15 @@ This document will introduce the Pixverse Videos Generation API integration inst
 
 ## Application and Usage
 
-To use Pixverse Videos Generation API, first open the [Ace Data Cloud Console](https://platform.acedata.cloud/console/applications) and copy your API Token.
+To use Pixverse Videos Generation API, first open the [Ace Data Cloud Console](https://platform.acedata.cloud/console/applications?utm_source=github) and copy your API Token.
 
 ![](https://cdn.acedata.cloud/dvc3cg.jpg)
 
 If you are not logged in, you will be redirected to sign in and brought back to this page automatically.
 
-**A single API Token works across every service on the platform — no need to subscribe per service.** New accounts receive free starter credit; when it runs low you can top up your shared balance in the [console](https://platform.acedata.cloud/console/coin).
+**A single API Token works across every service on the platform — no need to subscribe per service.** New accounts receive free starter credit; when it runs low you can top up your shared balance in the [console](https://platform.acedata.cloud/console/coin?utm_source=github).
 
-> 📘 Full documentation: [Pixverse Videos Generation API →](https://platform.acedata.cloud/documents/pixverse)
+> 📘 Full documentation: [Pixverse Videos Generation API →](https://platform.acedata.cloud/documents/pixverse?utm_source=github)
 
 ## Basic Usage
 
@@ -753,8 +753,8 @@ It can be seen that the result content is the same as the video template effect,
 ## Quick Start
 
 - Base URL: [https://api.acedata.cloud](https://api.acedata.cloud)
-- Service page: [Pixverse Video Generation on Ace Data Cloud](https://platform.acedata.cloud/service/pixverse)
-- Docs: [Developer documentation](https://docs.acedata.cloud)
+- Service page: [Pixverse Video Generation on Ace Data Cloud](https://platform.acedata.cloud/service/pixverse?utm_source=github)
+- Docs: [Developer documentation](https://docs.acedata.cloud?utm_source=github)
 
 ```bash
 curl --request POST "https://api.acedata.cloud/pixverse/videos" \
@@ -769,17 +769,17 @@ Explore the supported endpoints and integration guides for Pixverse Video Genera
 
 | API | Path | Integration Guidance |
 | ---- | ---- | ------------ |
-| [Pixverse Video Generation API Integration Guide](https://platform.acedata.cloud/documents/00f200b3-709d-4783-ac56-3d27cc70b73d) | `/pixverse/videos` | [Pixverse Video Generation API Integration Guide](https://platform.acedata.cloud/documents/a5c7bf5a-18bf-4943-becc-cfe1356f90ec) |
-| [Pixverse Character API](https://platform.acedata.cloud/documents/32f3dd45-7000-49c2-a38e-285bd02ae334) | `/pixverse/character` | [](https://platform.acedata.cloud/documents/) |
-| [Pixverse Tasks API](https://platform.acedata.cloud/documents/94d98778-9a98-4e27-bd68-e018a34fae11) | `/pixverse/tasks` | [](https://platform.acedata.cloud/documents/) |
+| [Pixverse Video Generation API Integration Guide](https://platform.acedata.cloud/documents/00f200b3-709d-4783-ac56-3d27cc70b73d?utm_source=github) | `/pixverse/videos` | [Pixverse Video Generation API Integration Guide](https://platform.acedata.cloud/documents/a5c7bf5a-18bf-4943-becc-cfe1356f90ec?utm_source=github) |
+| [Pixverse Character API](https://platform.acedata.cloud/documents/32f3dd45-7000-49c2-a38e-285bd02ae334?utm_source=github) | `/pixverse/character` | [](https://platform.acedata.cloud/documents/?utm_source=github) |
+| [Pixverse Tasks API](https://platform.acedata.cloud/documents/94d98778-9a98-4e27-bd68-e018a34fae11?utm_source=github) | `/pixverse/tasks` | [](https://platform.acedata.cloud/documents/?utm_source=github) |
 
 ## Related Resources
 
-- [Ace Data Cloud Developer Platform](https://platform.acedata.cloud)
-- [Ace Data Cloud Docs](https://docs.acedata.cloud)
+- [Ace Data Cloud Developer Platform](https://platform.acedata.cloud?utm_source=github)
+- [Ace Data Cloud Docs](https://docs.acedata.cloud?utm_source=github)
 - [Status Page](https://status.acedata.cloud)
 - [Ace Data Cloud GitHub Organization](https://github.com/AceDataCloud)
 
 ## Support
 
-If you meet any issue, please check [support info](https://platform.acedata.cloud/support) or browse the latest documentation on [docs.acedata.cloud](https://docs.acedata.cloud).
+If you meet any issue, please check [support info](https://platform.acedata.cloud/support?utm_source=github) or browse the latest documentation on [docs.acedata.cloud](https://docs.acedata.cloud?utm_source=github).
